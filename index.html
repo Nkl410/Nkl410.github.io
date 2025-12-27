@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikola Vucic — Portfolio</title>
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#home">NV<span class="dot">.</span></a>
+
+      <nav class="menu" aria-label="Navigation principale">
+        <a href="#home" class="menu__link">Home</a>
+        <a href="#about" class="menu__link">About</a>
+        <a href="#skills" class="menu__link">Skills</a>
+        <a href="#projects" class="menu__link">Projects</a>
+        <a href="#contact" class="btn btn--sm">Contact</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="badge">Seeking an internship</p>
+          <h1 class="hero__title">
+            Nikola <span class="accent">Vucic</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Engineering student in <span class="accent">DATA & AI</span>  <br>I build clean data pipelines, dashboards & AI prototypes
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="hero__meta">
+            <span>Paris, France</span>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <img class="avatar" src="images/nikola photo .jpg" alt="Photo de Nikola" />
+          <div class="card card--floating">
+            <p class="card__kpi">Project lead</p>
+            <p class="card__label">Data & operations</p>
+
+          </div>
+          <div class="card card--floating2">
+            <p class="card__kpi">AI / Data</p>
+            <p class="card__label">Portfolio projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- PRESENTATION -->
+<section id="presentation" class="section section--alt">
+  <div class="container">
+    <div class="section__head">
+      <h2 class="section__title">Presentation</h2>
+      <p class="section__desc">
+        I’m a 3rd-year engineering student specializing in Data & AI, passionate about tech and real-world problem solving.
+        As part of my studies, I’m looking for a 3-month internship abroad and I’m excited to join a new team and contribute to impactful projects.
+      </p>
+    </div>
+
+    <div class="grid grid--2">
+      <div class="panel">
+        <h3 class="panel__title">What I’m looking for</h3>
+        <ul class="bullets">
+          <li>3-month internship abroad (Data / AI / Data Engineering / Data Science)</li>
+          <li>Hands-on missions: pipelines, data applications, automation, ML </li>
+          <li>Team environment with real product & business stakes</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h3 class="panel__title">What I bring</h3>
+        <ul class="bullets">
+          <li>Strong execution mindset and end-to-end ownership</li>
+          <li>Clean data work: structuring, ETL, quality, reproducibility</li>
+          <li>Applied AI: prototyping, evaluation, and iteration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__desc">Core technical skills applied across data engineering, automation, and AI-driven projects.</p>
+        </div>
+
+        <div class="grid grid--3">
+            <div class="panel">
+            <h3 class="panel__title">Data & AI</h3>
+            <ul class="bullets">
+                <li>Pandas, NumPy — data processing & analysis</li>
+                <li>Scikit-learn — classical ML (classification, regression)</li>
+                <li>TensorFlow — CNN training & inference</li>
+                <li>Data cleaning, preprocessing & ETL pipelines</li>
+                <li>Data visualization & performance metrics</li>
+            </ul>
+            </div>
+
+            <div class="panel">
+            <h3 class="panel__title">Backend</h3>
+            <ul class="bullets">
+                <li>REST APIs — design & integration</li>
+                <li>SQL (PostgreSQL) — relational data modeling</li>
+                <li>NoSQL (MongoDB) — document-based data storage</li>
+                <li>Authentication & role-based access (basic)</li>
+                <li>Backend logic for data-driven applications</li>
+            </ul>
+            </div>
+
+
+            <div class="panel">
+            <h3 class="panel__title">Frontend</h3>
+            <ul class="bullets">
+                <li>HTML, CSS, JavaScript — modern web standards</li>
+                <li>React — component-based UI development</li>
+                <li>Responsive layouts & cross-device compatibility</li>
+                <li>Basic UI/UX principles and interface polish</li>
+            </ul>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__desc">Below is a selection of projects developed through academic and professional experiences, focusing on practical problem-solving, data-driven approaches, and measurable impact.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <!-- CARD 1 -->
+            <a href="project-inventory.html" class="project" >
+                <div class="project__top">
+                <span class="tag">Data / Automation / AI</span>
+                <h3 class="project__title">Inventory Digitization Platform</h3>
+                <p class="project__desc">
+                    Built a data-driven platform to structure large-scale inventory datasets, automate product sheet creation, and integrate a CNN-based object recognition model to enhance product identification and data enrichmen                </p>
+                </div>
+                <div class="project__meta">
+                <span class="mini">Python</span>
+                <span class="mini">SQL</span>
+                <span class="mini">REACT</span>
+                <span class="mini">Figma</span>
+                <span class="mini">Managment (+20 ppl)</span>
+                
+                </div>
+            </a>
+
+                    <!-- CARD 2 -->
+            <a href="project-dura.html" class="project">
+            <div class="project__top">
+                <span class="tag">Data Platform / Automation /AI</span>
+
+                <h3 class="project__title">
+                DURA — Data & Durability Analysis Platform
+                </h3>
+
+                <p class="project__desc">
+                Designed and developed a data platform to automate mission profile analysis,
+                structure large industrial datasets, and support durability studies through
+                reusable pipelines and dashboards.
+                </p>
+            </div>
+
+            <div class="project__meta">
+                <span class="mini">Python</span>
+                <span class="mini">SQL</span>
+                <span class="mini">Data Engineering</span>
+                <span class="mini">Automation</span>
+                <span class="mini">HTML/CSS/JS</span>
+
+            </div>
+            </a>
+
+     <!-- CARD 3 -->
+            <a href="project-xray-cnn.html" class="project">
+            <div class="project__top">
+                <span class="tag">AI / Medical Imaging</span>
+                <h3 class="project__title">CNN Disease Detection from X-Ray Images</h3>
+                <p class="project__desc">
+                Designed and built a platform integrating a CNN model to classify diseases from X-ray images,
+                including data preprocessing, augmentation, and result visualization to support medical image analysis.
+                </p>
+            </div>
+
+            <div class="project__meta">
+                <span class="mini">CNN</span>
+                <span class="mini">Python</span>
+                <span class="mini">Sklearn</span>
+                <span class="mini">Computer Vision</span>
+                <span class="mini">Data visualisation</span>
+            </div>
+            </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__desc">You can find me here :)</p>
+        </div>
+
+        <div class="contact__card">
+          <div class="contact__grid">
+            <ul class="contact__list">
+              <li><img src="images/mail.png" alt="">nikola.vucic@gmail.com</li>
+              <li><img src="images/linkedin.png" alt="">linkedin.com/in/nikola-vucic74</li>
+            </ul>
+            <ul class="contact__list">
+              <li><img src="images/phone-call.png" alt="">+33 6 31 18 90 52</li>
+              <li><img src="images/pin.png" alt="">Paris, France</li>
+            </ul>
+          </div>
+
+          <div class="contact__cta">
+            <a class="btn" href="mailto:nikola.vucic@gmail.com">Email me</a>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Nikola Vucic. All rights reserved.</p>
+        <a class="link" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DURA — Data Platform for Durability Analysis</title>
+  <link rel="stylesheet" href="project-dura.css" />
+</head>
+
+<body>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="logo" href="index.html">NV<span class="dot">.</span></a>
+      <a class="back" href="index.html#projects">← Back to projects</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="pill">Data Platform / Automation / Industrial Analytics</span>
+        <h1 class="title">DURA — Durability Analysis Data Platform</h1>
+        <p class="subtitle">
+            A modular platform to automate mission profile analysis, standardize durability workflows, and provide reliable dashboards for engineering teams, all running on cloud-based Databricks infrastructure.
+        </p>
+
+        <div class="hero__chips">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">ETL</span>
+          <span class="chip">APIs</span>
+          <span class="chip">Dashboards</span>
+        </div>
+      </div>
+
+      <div class="hero__kpis">
+        <div class="kpi">
+          <p class="kpi__value">Modular</p>
+          <p class="kpi__label">Architecture</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__value">Automated</p>
+          <p class="kpi__label">MP analysis pipeline</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__value">Reusable</p>
+          <p class="kpi__label">Data model & workflows</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="page">
+    <div class="container">
+
+      <!-- CONTEXT / OBJECTIVES -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Context</h2>
+          <p class="muted">
+            DURA is an internal engineering platform developed as part of my current role at eMotors (Stellantis), designed to structure and automate durability analytics. The goal is to move from manual, file-based workflows to standardized pipelines with full traceability, reproducible results, and clear dashboards for engineering teams.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="h3">Problems addressed</h3>
+            <ul class="list">
+              <li>Manual analysis steps and inconsistent outputs across teams</li>
+              <li>Heterogeneous input files and hard-to-reuse processing scripts</li>
+              <li>Limited traceability (who ran what, with which parameters)</li>
+              <li>No centralized view of mission profiles, results, and status</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Objectives</h3>
+            <ul class="list">
+              <li>Automate mission profile processing (standard pipeline)</li>
+              <li>Store inputs, outputs, and metadata for full traceability</li>
+              <li>Provide dashboards for quick validation and reporting</li>
+              <li>Design a scalable architecture to add future modules</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ROLE -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">My role</h2>
+          <p class="muted">
+            I led the project end-to-end: functional analysis, technical architecture, data model,
+            first module implementation, and stakeholder alignment.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3 class="h3">Product & delivery</h3>
+            <ul class="list">
+              <li>Requirements gathering & functional specs</li>
+              <li>Roadmap, MVP scope, and delivery planning</li>
+              <li>Regular alignment with engineers & stakeholders</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Architecture & data</h3>
+            <ul class="list">
+              <li>Relational data model (entities, workflows, history)</li>
+              <li>Database design with traceability concepts</li>
+              <li>ETL workflow patterns for ingestion & processing</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Implementation</h3>
+            <ul class="list">
+              <li>Automated parsing, validation, and standardization</li>
+              <li>Reusable computation blocks (analysis steps)</li>
+              <li>Dashboard-ready outputs (KPIs & visuals)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- MODULES -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Platform modules</h2>
+          <p class="muted">
+            The platform is designed as a set of independent modules, sharing a common data model
+            and consistent workflows.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="h3">Mission Profile (MP) module</h3>
+            <p class="muted">
+              Centralizes mission profile inputs, runs standardized processing, stores outputs and metadata,
+              and provides dashboard-ready summaries.
+            </p>
+            <div class="tags">
+              <span class="tag">Ingestion</span>
+              <span class="tag">Validation</span>
+              <span class="tag">Standardization</span>
+              <span class="tag">Traceability</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Damage Law module (planned)</h3>
+            <p class="muted">
+              Extends the platform to compute durability metrics from processed mission profiles
+              (e.g., damage computation, Rainflow matrices, reporting).
+            </p>
+            <div class="tags">
+              <span class="tag tag--ghost">Planned</span>
+              <span class="tag">Computation</span>
+              <span class="tag">Reporting</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARCHITECTURE -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Architecture overview</h2>
+          <p class="muted">
+            Designed to be scalable and industrial-friendly: clear separation between ingestion, processing,
+            storage, and visualization layers.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3 class="h3">Data layer</h3>
+            <ul class="list">
+              <li>Structured entities: groups, files, runs, results</li>
+              <li>History tables for audit trail</li>
+              <li>Metadata and parameters saved with each run</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Processing layer</h3>
+            <ul class="list">
+              <li>ETL pattern: ingest → clean → compute → store</li>
+              <li>Deterministic outputs for reproducibility</li>
+              <li>Validation rules to ensure data quality</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">App layer</h3>
+            <ul class="list">
+              <li>Dashboard-oriented KPIs and visuals</li>
+              <li>Clear navigation per module</li>
+              <li>Export-friendly results</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+  <!-- TECH STACK -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="stack-head">
+      <h2 class="section__title">Tech Stack</h2>
+      <p class="section__desc">Tools used across data engineering, automation, and AI projects.</p>
+    </div>
+
+    <div class="stack">
+      <div class="stack__item">
+        <img src="images/OIP.webp" alt="Python" loading="lazy">
+        <span>Python</span>
+      </div>
+
+      <div class="stack__item">
+        <img src="images/th.webp" alt="Pandas" loading="lazy">
+        <span>Pandas</span>
+      </div>
+
+      <div class="stack__item">
+        <img src="images/télécharger.webp" alt="SQL" loading="lazy">
+        <span>SQL</span>
+      </div>
+
+      <div class="stack__item">
+        <img src="images/OIP (5).webp" alt="TensorFlow" loading="lazy">
+        <span>Databricks</span>
+      </div>
+
+      <div class="stack__item">
+        <img src="images/OIP (2).webp" alt="MongoDB" loading="lazy">
+        <span>HTML</span>
+      </div>
+
+      <div class="stack__item">
+        <img src="images/OIP (3).webp" alt="MongoDB" loading="lazy">
+        <span>CSS</span>
+      </div>
+      <div class="stack__item">
+        <img src="images/OIP (4).webp" alt="MongoDB" loading="lazy">
+        <span>JavaScript</span>
+      </div>
+      <div class="stack__item">
+        <img src="images/télécharger (4).webp" alt="MongoDB" loading="lazy">
+        <span>Flask</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- TAKEAWAYS -->
+      <section class="section section--end">
+        <div class="section__head">
+          <h2 class="h2">Key takeaways</h2>
+          <p class="muted">
+            This project strengthened my ability to design robust data systems, collaborate with engineering teams,
+            and deliver a scalable platform foundation.
+          </p>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="index.html#contact">Contact me</a>
+          <a class="btn btn--ghost" href="index.html#projects">See other projects</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> Nikola Vucic</p>
+      <a class="back" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

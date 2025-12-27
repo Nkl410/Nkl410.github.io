@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CNN Disease Detection — X-ray Platform</title>
+  <link rel="stylesheet" href="project-xray-cnn.css" />
+</head>
+
+<body>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="logo" href="index.html">NV<span class="dot">.</span></a>
+      <a class="back" href="index.html#projects">← Back to projects</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="pill">AI / Medical Imaging / Platform</span>
+        <h1 class="title">CNN Disease Detection from X-Ray Images</h1>
+        <p class="subtitle">
+          Built a platform integrating a CNN model to classify diseases from radiography images,
+          with automated preprocessing, augmentation, and result visualization for fast experimentation.
+        </p>
+
+        <div class="hero__chips">
+          <span class="chip">Python</span>
+          <span class="chip">Computer Vision</span>
+          <span class="chip">CNN</span>
+          <span class="chip">Training Pipeline</span>
+          <span class="chip">Inference</span>
+        </div>
+      </div>
+
+      <div class="hero__kpis">
+        <div class="kpi">
+          <p class="kpi__value">CNN</p>
+          <p class="kpi__label">Model training</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__value">Pipeline</p>
+          <p class="kpi__label">Preprocess → Train → Evaluate</p>
+        </div>
+        <div class="kpi">
+          <p class="kpi__value">Platform</p>
+          <p class="kpi__label">Visualization & inference</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="page">
+    <div class="container">
+
+      <!-- CONTEXT -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Context</h2>
+          <p class="muted">
+            The goal of this project was to build a reliable and reusable workflow for medical image
+            classification using radiography images. Beyond model training, I focused on building a small
+            platform to standardize experiments and make results easy to interpret.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3 class="h3">Objectives</h3>
+            <ul class="list">
+              <li>Train a CNN to classify diseases from X-ray images</li>
+              <li>Build a clean preprocessing and augmentation pipeline</li>
+              <li>Track performance and reduce overfitting</li>
+              <li>Provide a simple platform for inference and visualization</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Challenges</h3>
+            <ul class="list">
+              <li>Dataset imbalance and limited medical data</li>
+              <li>Noise and variability across X-ray images</li>
+              <li>Generalization and robustness (overfitting risk)</li>
+              <li>Clear evaluation beyond raw accuracy</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PLATFORM -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Platform features</h2>
+          <p class="muted">
+            I designed the project as a lightweight platform so the workflow could be reused and scaled:
+            standardized inputs, consistent training loops, and clear outputs.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3 class="h3">Data pipeline</h3>
+            <ul class="list">
+              <li>Image loading and normalization</li>
+              <li>Resizing and augmentation strategies</li>
+              <li>Train/validation split management</li>
+              <li>Reproducible experiment setup</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Model training</h3>
+            <ul class="list">
+              <li>CNN architecture definition</li>
+              <li>Regularization (dropout / early stopping)</li>
+              <li>Metrics tracking and evaluation</li>
+              <li>Model saving and versioning (basic)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3">Inference & visualization</h3>
+            <ul class="list">
+              <li>Run predictions on new images</li>
+              <li>Confidence score display</li>
+              <li>Confusion matrix / key metrics</li>
+              <li>Clear, readable result outputs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PIPELINE -->
+      <section class="section">
+        <div class="section__head">
+          <h2 class="h2">Workflow</h2>
+          <p class="muted">
+            End-to-end flow from raw radiographies to trained model and inference-ready outputs.
+          </p>
+        </div>
+
+        <div class="flow">
+          <div class="flow__item">
+            <p class="flow__title">1) Ingestion</p>
+            <p class="muted">Load dataset, standardize format, define splits.</p>
+          </div>
+          <div class="flow__item">
+            <p class="flow__title">2) Preprocessing</p>
+            <p class="muted">Resize, normalize, apply augmentation strategies.</p>
+          </div>
+          <div class="flow__item">
+            <p class="flow__title">3) Training</p>
+            <p class="muted">Train CNN, monitor metrics, prevent overfitting.</p>
+          </div>
+          <div class="flow__item">
+            <p class="flow__title">4) Evaluation</p>
+            <p class="muted">Confusion matrix, precision/recall, error analysis.</p>
+          </div>
+          <div class="flow__item">
+            <p class="flow__title">5) Inference</p>
+            <p class="muted">Predict on new X-rays, show confidence + summary.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAKEAWAYS -->
+      <section class="section section--end">
+        <div class="section__head">
+          <h2 class="h2">Key takeaways</h2>
+          <p class="muted">
+            This project improved my ability to build robust training pipelines, handle real-world data constraints,
+            and package an AI workflow into a platform that’s easy to test and interpret.
+          </p>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="index.html#contact">Contact me</a>
+          <a class="btn btn--ghost" href="index.html#projects">See other projects</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="muted">© <span id="year"></span> Nikola Vucic</p>
+      <a class="back" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
