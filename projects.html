@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="projectsPage.meta.title">Projets — Nikola Vucic</title>
+  <meta name="description" content="Détail des projets de Nikola Vucic : Reclaim, DURA, Predictive Quality (PPM) et détection de pneumonie par CNN." data-i18n="projectsPage.meta.description" data-i18n-attr="content" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Caveat:wght@500;600;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Aller au contenu principal</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="nav__inner">
+      <div class="nav__brand">
+        <a class="logo" href="index.html">NV<span class="dot">.</span></a>
+      </div>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navigation principale">
+        <a href="index.html" class="nav__link" data-i18n="nav.home">Accueil</a>
+        <a href="index.html#about" class="nav__link" data-i18n="nav.about">À propos</a>
+        <a href="index.html#skills" class="nav__link" data-i18n="nav.skills">Compétences</a>
+        <a href="index.html#experience" class="nav__link" data-i18n="nav.experience">Expériences</a>
+        <a href="projects.html" class="nav__link is-active" data-i18n="nav.projects">Projets</a>
+        <a href="index.html#education" class="nav__link" data-i18n="nav.education">Formation</a>
+        <a href="index.html#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="nav__socials">
+          <a class="icon-btn" href="https://github.com/Nkl410" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/nikola-vucic74" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.68V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.19-1.75 3.41 0 4.28 2.25 4.28 5.17V20Z"/></svg>
+          </a>
+          <a class="icon-btn" href="mailto:nikola.vucic74@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+        </div>
+
+        <div class="lang-toggle" role="group" aria-label="Choix de la langue">
+          <button type="button" class="lang-toggle__opt" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="lang-toggle__opt" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ PAGE HERO ============ -->
+    <section class="section ruled" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section-label" data-i18n="projectsPage.label">ce que j'ai construit !</span>
+          <span class="section-label__rule" aria-hidden="true"></span>
+          <h1 class="display section__banner" data-i18n="projectsPage.banner">Projets</h1>
+          <p class="section__note">
+            <span class="tape-note" data-i18n="projectsPage.note">Quatre projets détaillés — contexte, problème, ce que j'ai construit, stack et impacts chiffrés — puis les autres dépôts de mon GitHub.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECLAIM ============ -->
+    <section id="reclaim" class="detail work--blue">
+      <div class="container container--wide">
+        <div class="work__tab-row">
+          <span class="work__tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span data-i18n="projects.p1.tab">Projet 01</span>
+          </span>
+        </div>
+
+        <div class="detail__panel">
+          <div class="detail__top">
+            <div>
+              <span class="work__date" data-i18n="projectsPage.reclaim.eyebrow">Automatisation de processus métier · TypeScript</span>
+              <h2 class="detail__title" style="margin-top: 1rem;">Reclaim</h2>
+            </div>
+            <a class="link-arrow" href="https://github.com/Nkl410/reclaim" target="_blank" rel="noopener">
+              <span data-i18n="projectsPage.viewRepo">Voir le repo</span>
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
+
+          <div class="detail__grid">
+            <div class="detail__blocks">
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
+                <p data-i18n="projectsPage.reclaim.context">Beaucoup de PME et d'indépendants perdent un temps considérable sur des tâches manuelles à faible valeur : ressaisir des données depuis des PDF, relancer des clients, synchroniser des informations entre outils. J'ai fondé Reclaim pour automatiser ces processus métier de bout en bout.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
+                <p data-i18n="projectsPage.reclaim.problem">Les données arrivent sous des formats non structurés (PDF, documents scannés, e-mails), doivent être extraites, vérifiées, puis injectées dans un CRM ou un système de reporting. Fait à la main, c'est lent, source d'erreurs et non traçable.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
+                <p data-i18n="projectsPage.reclaim.built">Des pipelines d'automatisation qui couvrent toute la chaîne : extraction des données depuis PDF/documents, couche de validation pour garantir la fiabilité avant injection, intégration et automatisation CRM, et des workflows événementiels (relances automatiques, synchronisation de données, reporting programmé). L'ensemble est pensé pour se déployer et tourner sans intervention.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
+                <div class="detail__stack">
+                  <span class="tag">TypeScript</span><span class="tag" data-i18n="projectsPage.reclaim.extractTag">Extraction de documents</span><span class="tag" data-i18n="projectsPage.reclaim.crmTag">Intégrations API / CRM</span><span class="tag" data-i18n="projectsPage.reclaim.eventTag">Architecture événementielle</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail__stats">
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.reclaim.stat1Value">Bout en bout</span>
+                <span class="stat__label" data-i18n="projectsPage.reclaim.stat1Label">de l'extraction jusqu'au déploiement</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.reclaim.stat2Value">Temps manuel réduit</span>
+                <span class="stat__label" data-i18n="projectsPage.reclaim.stat2Label">sur les traitements récurrents côté clients</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.reclaim.stat3Value">Données fiabilisées</span>
+                <span class="stat__label" data-i18n="projectsPage.reclaim.stat3Label">par la couche de validation avant injection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DURA ============ -->
+    <section id="dura" class="detail work--green">
+      <div class="container container--wide">
+        <div class="work__tab-row">
+          <span class="work__tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span data-i18n="projects.p2.tab">Projet 02</span>
+          </span>
+        </div>
+
+        <div class="detail__panel">
+          <div class="detail__top">
+            <div>
+              <span class="work__date" data-i18n="projectsPage.dura.eyebrow">Data Platform · Emotors (Stellantis)</span>
+              <h2 class="detail__title" style="margin-top: 1rem;">DURA</h2>
+            </div>
+            <span class="detail__note" data-i18n="projectsPage.internalNote">Projet interne Stellantis — code non public</span>
+          </div>
+
+          <div class="detail__grid">
+            <div class="detail__blocks">
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
+                <p data-i18n="projectsPage.dura.context">Chez Emotors (Stellantis), les équipes durabilité valident la tenue mécanique des composants moteur. Chaque validation part de profils de mission — des relevés de conditions réelles d'usage — qu'il faut traiter pour calculer la fatigue des pièces et en tirer des KPIs d'ingénierie.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
+                <p data-i18n="projectsPage.dura.problem">Ce traitement était entièrement manuel et refait équipe par équipe : récupération des fichiers bruts, calculs sur scripts locaux, mise en forme des résultats. Un cycle d'analyse complet prenait environ un mois, les méthodes divergeaient d'une équipe à l'autre, et rien ne permettait de remonter d'un résultat jusqu'au signal brut qui l'avait produit.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
+                <p data-i18n="projectsPage.dura.built">DURA, une plateforme qui industrialise toute la chaîne : ingestion automatisée des séries temporelles, traitement des profils de mission, calculs de fatigue et production des KPIs. J'ai conçu les pipelines et les schémas PostgreSQL (15+ tables) qui structurent ~10 Go de données par mois, ainsi que 10+ modules de calcul réutilisables qui garantissent que chaque équipe applique la même méthode. Le tout est exposé via des APIs REST, conteneurisé avec Docker et passe à l'échelle sur Databricks, avec une traçabilité complète du signal brut jusqu'aux sorties.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
+                <div class="detail__stack">
+                  <span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">PySpark</span><span class="tag">Databricks</span><span class="tag">Docker</span><span class="tag" data-i18n="projectsPage.dura.restTag">APIs REST</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail__stats">
+              <div class="stat">
+                <span class="stat__value">1 mois → 1 semaine</span>
+                <span class="stat__label" data-i18n="projectsPage.dura.stat1Label">cycle d'analyse, résultats standardisés entre équipes</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">15+ tables</span>
+                <span class="stat__label" data-i18n="projectsPage.dura.stat2Label">schémas PostgreSQL</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">~10 Go/mois</span>
+                <span class="stat__label" data-i18n="projectsPage.dura.stat3Label">de séries temporelles traitées</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.dura.stat4Value">100 % automatisée</span>
+                <span class="stat__label" data-i18n="projectsPage.dura.stat4Label">ingestion, signal brut → sorties</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PPM ============ -->
+    <section id="ppm" class="detail work--magenta">
+      <div class="container container--wide">
+        <div class="work__tab-row">
+          <span class="work__tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span data-i18n="projects.p3.tab">Projet 03</span>
+          </span>
+        </div>
+
+        <div class="detail__panel">
+          <div class="detail__top">
+            <div>
+              <span class="work__date" data-i18n="projectsPage.ppm.eyebrow">Machine Learning · Emotors (Stellantis)</span>
+              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.ppm.title">Predictive Quality (PPM)</h2>
+            </div>
+            <span class="detail__note" data-i18n="projectsPage.internalNote">Projet interne Stellantis — code non public</span>
+          </div>
+
+          <div class="detail__grid">
+            <div class="detail__blocks">
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
+                <p data-i18n="projectsPage.ppm.context">Toujours chez Emotors, en prolongement de DURA : les équipes qualité pilotent la fiabilité produit avec l'indicateur PPM — le nombre de pièces défectueuses par million — calculé à partir des données de production et des retours terrain.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
+                <p data-i18n="projectsPage.ppm.problem">Cet indicateur est par nature rétrospectif : une dérive qualité n'apparaissait qu'une fois les PPM dégradés, donc une fois les pièces déjà produites. Aucun signal d'alerte en amont, et donc aucune marge pour corriger avant que le défaut ne se propage sur la série.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
+                <p data-i18n="projectsPage.ppm.built">Des modèles prédictifs qui estiment les KPIs PPM à partir des variables de production et de durabilité, en réutilisant les pipelines et les modules de calcul de DURA comme socle de données. Les modèles tournent sur les données courantes et signalent les dérives probables avant qu'elles ne se matérialisent dans les indicateurs, ce qui transforme le suivi qualité d'un constat en une alerte.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
+                <div class="detail__stack">
+                  <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">PostgreSQL</span><span class="tag">Databricks</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail__stats">
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.ppm.stat1Value">Détection précoce</span>
+                <span class="stat__label" data-i18n="projectsPage.ppm.stat1Label">des dérives qualité PPM</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.ppm.stat2Value">Décisions data-driven</span>
+                <span class="stat__label" data-i18n="projectsPage.ppm.stat2Label">pour les équipes fiabilité</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value">10+ modules</span>
+                <span class="stat__label" data-i18n="projectsPage.ppm.stat3Label">de calcul réutilisés depuis DURA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PNEUMONIA CNN ============ -->
+    <section id="pneumonia" class="detail work--yellow">
+      <div class="container container--wide">
+        <div class="work__tab-row">
+          <span class="work__tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span data-i18n="projects.p4.tab">Projet 04</span>
+          </span>
+        </div>
+
+        <div class="detail__panel">
+          <div class="detail__top">
+            <div>
+              <span class="work__date" data-i18n="projectsPage.pneumonia.eyebrow">Deep Learning · Imagerie médicale</span>
+              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.pneumonia.title">Détection de pneumonie par CNN</h2>
+            </div>
+            <a class="link-arrow" href="https://github.com/Nkl410/Pneumonia-CNN-Detection" target="_blank" rel="noopener">
+              <span data-i18n="projectsPage.viewRepo">Voir le repo</span>
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+            </a>
+          </div>
+
+          <p class="detail__why" data-i18n="projectsPage.pneumonia.why">4ᵉ projet sélectionné sur mon GitHub : parmi mes dépôts personnels, celui-ci montre le mieux une expertise deep learning / computer vision complète — du prétraitement d'images à l'évaluation du modèle — dans un domaine différent de l'automobile, ce qui complète le panorama data eng (Reclaim) + industrie (DURA, PPM) par un projet ML appliqué.</p>
+
+          <div class="detail__grid">
+            <div class="detail__blocks">
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
+                <p data-i18n="projectsPage.pneumonia.context">Projet personnel d'exploration du deep learning appliqué à l'imagerie médicale, à partir d'un jeu public de radiographies thoraciques étiquetées sain / pneumonie.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
+                <p data-i18n="projectsPage.pneumonia.problem">Le diagnostic de pneumonie sur radiographie demande une lecture experte. L'enjeu technique était double : vérifier qu'un réseau convolutif peut apprendre les motifs pathologiques à partir d'images brutes, et surtout limiter les faux négatifs — un cas positif manqué coûte bien plus cher qu'une fausse alerte.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
+                <p data-i18n="projectsPage.pneumonia.built">Un CNN entraîné sur des images 150x150 RGB, avec quatre blocs convolution + pooling pour l'extraction de features, puis une couche dense (256 unités), du dropout (0.5) et une sortie sigmoïde pour la classification binaire. L'entraînement utilise l'optimiseur Adam, l'early stopping et la réduction du taux d'apprentissage sur plateau pour stabiliser la convergence. Le modèle est évalué via matrice de confusion et courbes accuracy/loss.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
+                <div class="detail__stack">
+                  <span class="tag">Python</span><span class="tag">TensorFlow / Keras</span><span class="tag">CNN</span><span class="tag">Matplotlib</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail__stats">
+              <div class="stat">
+                <span class="stat__value">4 blocs conv.</span>
+                <span class="stat__label" data-i18n="projectsPage.pneumonia.stat1Label">+ pooling pour l'extraction de features</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.pneumonia.stat2Value">Early stopping</span>
+                <span class="stat__label" data-i18n="projectsPage.pneumonia.stat2Label">+ réduction du LR sur plateau</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.pneumonia.stat3Value">Classification binaire</span>
+                <span class="stat__label" data-i18n="projectsPage.pneumonia.stat3Label">seuil de décision à 0.5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MORE REPOS ============ -->
+    <section class="section ruled">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section-label" data-i18n="projectsPage.more.label">et aussi !</span>
+          <span class="section-label__rule" aria-hidden="true"></span>
+          <h2 class="display section__banner" data-i18n="projectsPage.more.banner">Autres projets</h2>
+          <p class="section__note">
+            <span class="tape-note" data-i18n="projectsPage.more.desc">D'autres dépôts sur mon GitHub, en data engineering, machine learning, visualisation et développement web.</span>
+          </p>
+        </div>
+
+        <div class="repos">
+          <a class="repo reveal" href="https://github.com/Nkl410/mat-to-parquet-loader" target="_blank" rel="noopener">
+            <h3 class="repo__title">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              mat-to-parquet-loader
+            </h3>
+            <p class="repo__desc" data-i18n="projectsPage.more.card1.desc">Convertit des fichiers MATLAB / texte / CSV en Parquet pour l'ingestion de séries temporelles à grande échelle.</p>
+            <div class="repo__tags"><span class="tag">Python</span><span class="tag">Parquet</span></div>
+          </a>
+
+          <a class="repo reveal" href="https://github.com/Nkl410/url-automation" target="_blank" rel="noopener">
+            <h3 class="repo__title">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              url-automation
+            </h3>
+            <p class="repo__desc" data-i18n="projectsPage.more.card2.desc">Récupère automatiquement des images depuis un fichier Excel, les sauvegarde sur Drive et génère une URL pour chacune.</p>
+            <div class="repo__tags"><span class="tag">Python</span><span class="tag" data-i18n="projectsPage.more.card2.tag">Automatisation</span></div>
+          </a>
+
+          <a class="repo reveal" href="https://github.com/Nkl410/Classification-Automatique-d-Esp-ces-de-Papillons-par-R-seaux-de-Neurones-Convolutionnels-CNN-" target="_blank" rel="noopener">
+            <h3 class="repo__title">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              <span data-i18n="projectsPage.more.card3.title">Classification de papillons par CNN</span>
+            </h3>
+            <p class="repo__desc" data-i18n="projectsPage.more.card3.desc">Classification automatique d'espèces de papillons par réseau de neurones convolutif.</p>
+            <div class="repo__tags"><span class="tag">Python</span><span class="tag">CNN</span></div>
+          </a>
+
+          <a class="repo reveal" href="https://github.com/Nkl410/MNIST-NN-from-scratch" target="_blank" rel="noopener">
+            <h3 class="repo__title">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              MNIST-NN-from-scratch
+            </h3>
+            <p class="repo__desc" data-i18n="projectsPage.more.card4.desc">Réseau de neurones pour la reconnaissance de chiffres MNIST codé à la main, sans framework de deep learning.</p>
+            <div class="repo__tags"><span class="tag">Python</span><span class="tag" data-i18n="projectsPage.more.card4.tag">Réseau de neurones</span></div>
+          </a>
+
+          <a class="repo reveal" href="https://github.com/Nkl410/Visualisation_Lol_World" target="_blank" rel="noopener">
+            <h3 class="repo__title">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              Visualisation_Lol_World
+            </h3>
+            <p class="repo__desc" data-i18n="projectsPage.more.card5.desc">Analyse des données d'un championnat esport pour identifier les meilleurs joueurs et les tendances de la compétition.</p>
+            <div class="repo__tags"><span class="tag">Jupyter</span><span class="tag" data-i18n="projectsPage.more.card5.tag">Data Visualisation</span></div>
+          </a>
+
+          <a class="repo reveal" href="https://github.com/Nkl410/farmer_short_circut_webapp" target="_blank" rel="noopener">
+            <h3 class="repo__title">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+              farmer_short_circut_webapp
+            </h3>
+            <p class="repo__desc" data-i18n="projectsPage.more.card6.desc">Webapp de circuit court agricole, pour mettre en relation producteurs et consommateurs.</p>
+            <div class="repo__tags"><span class="tag">JavaScript</span><span class="tag">Web App</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT BANNER ============ -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__wrap">
+          <a class="contact__banner taped" href="index.html#contact">
+            <span class="contact__tagline" data-i18n="contact.tagline">construisons quelque chose ensemble</span>
+            <span class="display contact__word" data-i18n="contact.word">Contact</span>
+            <span class="link-arrow">
+              <span data-i18n="contact.cta">M'écrire</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer ruled">
+    <div class="footer__inner">
+      <div>
+        <p class="display footer__name">Nikola Vucic</p>
+        <p class="dot-label footer__role" data-i18n="footer.role">Data Scientist / Data Engineer</p>
+      </div>
+      <div class="footer__side">
+        <nav class="footer__nav" aria-label="Navigation de pied de page">
+          <a href="index.html#about" data-i18n="nav.about">À propos</a>
+          <a href="index.html#experience" data-i18n="nav.experience">Expériences</a>
+          <a href="projects.html" data-i18n="nav.projects">Projets</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="footer__socials">
+          <a class="icon-btn" href="https://github.com/Nkl410" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/nikola-vucic74" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.68V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.19-1.75 3.41 0 4.28 2.25 4.28 5.17V20Z"/></svg>
+          </a>
+          <a class="icon-btn" href="mailto:nikola.vucic74@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          </a>
+        </div>
+        <p class="footer__copy">© <span id="year"></span> Nikola Vucic</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
