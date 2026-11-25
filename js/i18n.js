@@ -16,7 +16,7 @@
     fr: {
       meta: {
         title: "Nikola Vucic — Data Scientist / Data Engineer",
-        description: "Portfolio de Nikola Vucic, Data Scientist / Data Engineer en alternance chez Emotors (Stellantis), à la recherche d'un stage d'avril à juillet."
+        description: "Portfolio de Nikola Vucic, Data Scientist / Data Engineer en alternance chez Emotors (Stellantis) et fondateur de Zuri Solutions (IA générative, agents, logiciel sur mesure), à la recherche d'un stage d'avril à juillet."
       },
       nav: {
         home: "Accueil",
@@ -44,7 +44,7 @@
       about: {
         label: "à propos de moi !",
         banner: "À propos",
-        statement: "Ingénieur Big Data & IA à l'ECE Paris, en alternance Data Scientist chez Stellantis. J'aime automatiser, industrialiser et livrer de bout en bout — de l'extraction de données jusqu'au déploiement.",
+        statement: "Ingénieur Big Data & IA à l'ECE Paris, Data Scientist en alternance chez Stellantis et fondateur de Zuri Solutions. J'aime automatiser, industrialiser et livrer de bout en bout — de l'extraction de données jusqu'aux agents IA en production.",
         lookingForTitle: "Ce que je recherche",
         lookingFor1: "Un stage de 3 mois, d'avril à juillet, en Data / IA / Data Engineering",
         lookingFor2: "Des missions concrètes : pipelines, applications data, automatisation, ML",
@@ -52,7 +52,7 @@
         bringTitle: "Ce que j'apporte",
         bring1: "Un mindset d'exécution et une ownership de bout en bout",
         bring2: "Un travail data rigoureux : structuration, ETL, qualité, reproductibilité",
-        bring3: "De l'IA appliquée : prototypage, évaluation, itération",
+        bring3: "De l'IA générative en production : agents, RAG, évaluations et non-régression des réponses",
         chessTitle: "Échecs",
         chessText: "Pratique régulière — pensée stratégique et anticipation.",
         violinTitle: "Violon",
@@ -69,6 +69,10 @@
         cat6: "DevOps",
         cat7: "Front-end",
         cat8: "Scraping & Automatisation",
+        cat9: "IA générative & LLM",
+        agents: "Agents & tool use",
+        evals: "Évals & non-régression",
+        regression: "Régression",
         reproEnv: "Environnements reproductibles",
         pyScripts: "Scripts Python"
       },
@@ -86,12 +90,17 @@
           moreDura: "Voir DURA",
           morePpm: "Voir Predictive Quality"
         },
-        reclaim: {
+        zuri: {
           role: "Fondateur",
-          meta: "Business Process Automation · Paris · 2026 → présent",
-          p1: { title: "Pipelines d'automatisation métier", text: "Je conçois des solutions d'automatisation sur mesure, adaptées aux besoins exacts de chaque client, pour éliminer les tâches répétitives et fluidifier leurs processus." },
-          p2: { title: "Impact", text: "Solutions livrées de bout en bout, de l'extraction jusqu'au déploiement : moins de traitement manuel côté clients et des données fiabilisées par l'étape de validation.", statValue: "Bout en bout", statLabel: "extraction → déploiement" },
-          more: "Voir Reclaim"
+          meta: "IA générative & logiciel sur mesure · Paris · 2026 → présent",
+          p1: { title: "La Forge — usine logicielle multi-agents", text: "Plateforme interne qui produit nos logiciels clients : 5 agents IA spécialisés pilotés par des contrats exécutables, non-régression automatique et 4 validations humaines du brief à la prod.", statValue: "5 agents · 8 phases", statLabel: "du brief à la mise en production" },
+          p2: { title: "Non-régression des réponses IA", text: "Chaque brique IA est livrée avec un jeu d'évaluation versionné et des seuils (exactitude, hallucination, latence p95, coût par requête) rejoués à chaque build : une réponse qui régresse bloque la livraison.", statValue: "≥ 90 % · ≤ 5 %", statLabel: "exactitude min. · hallucination max." },
+          p3: { title: "Frog Hub — groupe de 8 pubs", text: "Hub de données reliant caisse, plannings, achats, réservations et compta, 7 agents IA, 20 automatisations et un copilote Claude qui répond avec les chiffres du hub et cite ses sources (RAG).", statValue: "10+ outils", statLabel: "reliés à un hub unique" },
+          p4: { title: "Extraction de surfaces depuis des plans PDF", text: "Pour Confier & Associés, cabinet de conseil en fiscalité foncière : extraction pièce par pièce, score de confiance, classification sur une matrice 74 dénominations × 16 types d'activité, export Excel au format client.", statValue: "100 % local", statLabel: "aucun plan ne quitte le poste" },
+          p5: { title: "Conseil & formation", text: "Audit et cartographie des processus, quick wins d'abord, puis formations IA / LLM pour les équipes clientes." },
+          moreForge: "Voir la Forge",
+          moreFrog: "Voir Frog Hub",
+          moreSurfaces: "Voir l'extraction de surfaces"
         },
         circularplace: {
           role: "Assistant Product Manager",
@@ -105,13 +114,15 @@
       projects: {
         label: "mes projets !",
         banner: "Projets",
-        note: "Quatre projets qui résument ma palette : data engineering, plateforme industrielle, machine learning et computer vision.",
+        note: "Six projets qui résument ma palette : agents IA, intégration de données, extraction de documents, plateforme industrielle, machine learning et computer vision.",
         viewProject: "Voir le projet",
         viewAll: "Tous les projets en détail",
-        p1: { tab: "Projet 01", date: "2026 — en cours", desc: "Rendre aux PME le temps perdu en saisie manuelle : extraction de données depuis des PDF, validation avant injection, intégration CRM et workflows événementiels.", tag2: "Extraction de documents" },
-        p2: { tab: "Projet 02", date: "Emotors · Stellantis", desc: "La plateforme qui automatise les études de durabilité : profils de mission, calculs de fatigue et KPIs ingénierie. Cycle d'analyse ramené d'un mois à une semaine." },
-        p3: { tab: "Projet 03", date: "Emotors · Stellantis", title: "Predictive Quality", desc: "Des modèles qui anticipent les dérives qualité PPM à partir des données de production et de durabilité, au lieu de les constater après coup.", tag2: "Modélisation" },
-        p4: { tab: "Projet 04", date: "Projet personnel", title: "Pneumonia CNN", desc: "Un réseau de neurones convolutif qui distingue automatiquement les radiographies pulmonaires saines des cas de pneumonie.", tag3: "Computer Vision" }
+        forge: { tab: "Projet 01", date: "Zuri Solutions · 2026", title: "La Forge", desc: "Notre usine logicielle : 5 agents IA pilotés par des contrats exécutables, avec non-régression automatique du code et des réponses IA, jusqu'à la mise en production.", tag2: "Agents IA", tag3: "Évals LLM" },
+        froghub: { tab: "Projet 02", date: "Zuri Solutions · Frog Pubs", title: "Frog Hub", desc: "Le hub de données d'un groupe de 8 pubs : 10+ outils reliés, 7 agents IA, 20 automatisations et un copilote Claude qui répond avec les vrais chiffres." },
+        surfaces: { tab: "Projet 03", date: "Zuri Solutions · Confier & Associés", title: "Plans → Surfaces", desc: "Extraire les surfaces de centaines de plans PDF, les fiabiliser par un score de confiance et les classer selon une matrice métier, au lieu de les recopier à la main." },
+        dura: { tab: "Projet 04", date: "Emotors · Stellantis", desc: "La plateforme qui automatise les études de durabilité : profils de mission, calculs de fatigue et KPIs ingénierie. Cycle d'analyse ramené d'un mois à une semaine." },
+        ppm: { tab: "Projet 05", date: "Emotors · Stellantis", title: "Predictive Quality", desc: "Des modèles qui anticipent les dérives qualité PPM à partir des données de production et de durabilité, au lieu de les constater après coup.", tag2: "Modélisation" },
+        pneumonia: { tab: "Projet 06", date: "Projet personnel", title: "Pneumonia CNN", desc: "Un réseau de neurones convolutif qui distingue automatiquement les radiographies pulmonaires saines des cas de pneumonie.", tag3: "Computer Vision" }
       },
       education: {
         label: "mes études !",
@@ -131,25 +142,55 @@
       projectsPage: {
         meta: {
           title: "Projets — Nikola Vucic",
-          description: "Détail des projets de Nikola Vucic : Reclaim, DURA, Predictive Quality (PPM) et détection de pneumonie par CNN."
+          description: "Détail des projets de Nikola Vucic : la Forge (agents IA), Frog Hub, extraction de surfaces depuis des plans PDF, DURA, Predictive Quality (PPM) et détection de pneumonie par CNN."
         },
         label: "ce que j'ai construit !",
         banner: "Projets",
-        note: "Quatre projets détaillés — contexte, problème, ce que j'ai construit, stack et impacts chiffrés — puis les autres dépôts de mon GitHub.",
+        note: "Six projets détaillés — contexte, problème, ce que j'ai construit, stack et impacts — puis les autres dépôts de mon GitHub.",
         viewRepo: "Voir le repo",
         internalNote: "Projet interne Stellantis — code non public",
         labels: { context: "Contexte", problem: "Problème", built: "Ce que j'ai construit", stack: "Stack technique" },
-        reclaim: {
-          eyebrow: "Automatisation de processus métier · TypeScript",
-          context: "Beaucoup de PME et d'indépendants perdent un temps considérable sur des tâches manuelles à faible valeur : ressaisir des données depuis des PDF, relancer des clients, synchroniser des informations entre outils. J'ai fondé Reclaim pour automatiser ces processus métier de bout en bout.",
-          problem: "Les données arrivent sous des formats non structurés (PDF, documents scannés, e-mails), doivent être extraites, vérifiées, puis injectées dans un CRM ou un système de reporting. Fait à la main, c'est lent, source d'erreurs et non traçable.",
-          built: "Des pipelines d'automatisation qui couvrent toute la chaîne : extraction des données depuis PDF/documents, couche de validation pour garantir la fiabilité avant injection, intégration et automatisation CRM, et des workflows événementiels (relances automatiques, synchronisation de données, reporting programmé). L'ensemble est pensé pour se déployer et tourner sans intervention.",
-          extractTag: "Extraction de documents",
-          crmTag: "Intégrations API / CRM",
-          eventTag: "Architecture événementielle",
-          stat1Value: "Bout en bout", stat1Label: "de l'extraction jusqu'au déploiement",
-          stat2Value: "Temps manuel réduit", stat2Label: "sur les traitements récurrents côté clients",
-          stat3Value: "Données fiabilisées", stat3Label: "par la couche de validation avant injection"
+        forge: {
+          eyebrow: "Plateforme interne · Zuri Solutions · Python · Claude Code",
+          title: "La Forge",
+          note: "Outil interne Zuri — code non public",
+          why: "Le projet qui montre le mieux ma façon de travailler : faire de l'IA générative un processus d'ingénierie mesurable, où rien n'est « fini » tant qu'un test exécutable ne l'a pas prouvé.",
+          context: "Chez Zuri Solutions, nous livrons du logiciel sur mesure et des briques d'IA générative pour des PME. Pour tenir des délais courts sans sacrifier la fiabilité, j'ai construit la Forge : l'usine logicielle qui pilote la création d'un projet client, du cadrage jusqu'à la mise en production.",
+          problem: "Un agent IA qui code seul déclare « fini » trop vite, casse ce qui marchait déjà, invente des champs d'API et peut toucher à des données réelles. Et une réponse de LLM n'est pas déterministe : sans mesure, on ne voit pas qu'elle se dégrade d'une version du prompt ou du modèle à l'autre.",
+          built: "Un orchestrateur et 5 agents spécialisés (produit, design, build, vérification, revue) qui avancent par contrats YAML : chaque tâche déclare ses entrées, une sortie attendue mesurable et une commande de vérification. Seul le vérificateur dit si c'est fait : il rejoue tous les contrats à chaque passage et signale toute régression. Les tests sont écrits par l'agent de vérification puis verrouillés avant que l'agent build ne code. Pour l'IA, les contrats embarquent un jeu d'évaluation versionné et des seuils issus du brief (exactitude, taux d'hallucination, latence p95, coût par requête) : c'est l'algorithme de non-régression des réponses, qui bloque une livraison dès qu'un score passe sous son seuil. Autour : 8 phases avec portes automatiques et 4 validations humaines, criticité C1/C2/C3, budget de tentatives avec escalade vers un modèle plus fort, coffre à secrets et proxy d'API en lecture seule, anonymisation obligatoire des données de test, hooks de garde-fous, tableau de bord temps réel et notifications. Déployée sur une VM (systemd, Tailscale) avec retour arrière versionné.",
+          agentsTag: "Orchestration multi-agents", evalTag: "Évaluation LLM", hooksTag: "Hooks & garde-fous",
+          stat1Value: "5 agents", stat1Label: "spécialisés, coordonnés par un orchestrateur",
+          stat2Value: "8 phases", stat2Label: "portes automatiques et 4 validations humaines",
+          stat3Value: "100 % verts", stat3Label: "contrats exigés avant merge, push ou mise en prod",
+          stat4Value: "4 métriques IA", stat4Label: "exactitude, hallucination, latence p95, coût / requête"
+        },
+        froghub: {
+          eyebrow: "Hub de données & IA · Zuri Solutions · Node.js · Claude API",
+          title: "Frog Hub & Club Frog",
+          note: "Projet client — code non public",
+          why: "Un vrai client, de l'audit au produit : cartographier les processus d'un groupe de pubs, puis construire le hub, les agents et le copilote qui suppriment le travail manuel identifié.",
+          context: "Frog Pubs exploite 8 pubs à Paris, Bordeaux et Toulouse, plus un siège et une brasserie. Après un audit et une cartographie complète de leurs processus, Zuri construit leur hub de données et Club Frog, un programme de fidélité bâti sur le hub.",
+          problem: "Plus de dix outils métier (caisse, plannings, achats, réservations, paiements, comptabilité) qui ne se parlent pas : ressaisies à chaque clôture de service, rapprochements faits à la main, chiffres différents d'un outil à l'autre, et 38 points de douleur relevés pendant l'audit.",
+          built: "Un prototype complet, puis le vrai hub branché sur les API. Le hub unifie les sources par adaptateurs (même schéma interne, que la donnée arrive par API ou par export) et restitue les bons chiffres à chaque rôle : équipes de pub, direction, opérations, marketing, comptabilité, IT. 7 agents IA ont chacun une mission tirée de l'audit, et 20 automatisations (« quand → quoi → où ») envoient la bonne donnée au bon outil, en automatique ou après validation. Frog Copilot, construit sur Claude avec tool use, répond avec les chiffres en direct du hub et les passages de la documentation interne, retrouvés par un moteur de recherche BM25 (RAG). Côté production : lecture seule par défaut, idempotence, files d'attente et backoff sur les limites d'API, aucune donnée personnelle dans les logs, et l'encaissement ne dépend jamais du hub.",
+          toolTag: "Tool use", apiTag: "Intégrations API", agentsTag: "Agents IA",
+          stat1Value: "8 pubs · 10+ outils", stat1Label: "reliés à un hub de données unique",
+          stat2Value: "7 agents · 20 automatisations", stat2Label: "chacun rattaché à un problème de l'audit",
+          stat3Value: "38 points de douleur", stat3Label: "suivis avec statut, méthode et décision",
+          stat4Value: "Copilote sourcé", stat4Label: "chiffres en direct + documentation citée"
+        },
+        surfaces: {
+          eyebrow: "Extraction de documents · Zuri Solutions · FastAPI · React",
+          title: "Plans → Surfaces",
+          note: "Projet client — code non public",
+          why: "De l'extraction brute à la donnée fiable : le projet où la règle métier compte autant que le parsing, avec un score de confiance qui dit au consultant où regarder.",
+          context: "Pour Confier & Associés, cabinet de conseil spécialisé dans la revalorisation de la taxe foncière des locaux professionnels. Chaque dossier est un lot de plans de métrage PDF dont les surfaces, pièce par pièce, étaient recopiées à la main.",
+          problem: "À l'échelle de centaines de plans, la ressaisie ne tient pas. Et la règle métier est piégeuse : le groupe d'une pièce (partie principale, dégagement, autre) dépend du type d'activité du bien. Les sanitaires sont un dégagement dans un atelier, mais une partie principale dans un hôtel.",
+          built: "Une plateforme locale, où les plans ne quittent jamais le poste. Elle extrait les couples pièce / surface du texte des PDF avec PyMuPDF, détecte l'étage, attribue à chaque ligne un score de confiance de 0 à 100 avec ses raisons (surface aberrante, libellé douteux, association suspecte), normalise les libellés vers les 74 dénominations du client, puis résout le groupe via une matrice 74 dénominations × 16 types d'activité, en trois niveaux de priorité. Le consultant corrige, renomme ou écarte une ligne dans l'interface ; chaque correction est rattachée à l'empreinte du PDF, et l'export Excel sort au format attendu par le cabinet.",
+          excelTag: "Export Excel",
+          stat1Value: "74 × 16", stat1Label: "matrice dénominations × types d'activité",
+          stat2Value: "Score 0–100", stat2Label: "de confiance par ligne, raisons affichées",
+          stat3Value: "100 % local", stat3Label: "aucun plan ne quitte le poste",
+          stat4Value: "Traitement par lot", stat4Label: "un PDF illisible n’interrompt jamais le lot"
         },
         dura: {
           eyebrow: "Data Platform · Emotors (Stellantis)",
@@ -175,7 +216,7 @@
         pneumonia: {
           eyebrow: "Deep Learning · Imagerie médicale",
           title: "Détection de pneumonie par CNN",
-          why: "4ᵉ projet sélectionné sur mon GitHub : parmi mes dépôts personnels, celui-ci montre le mieux une expertise deep learning / computer vision complète — du prétraitement d'images à l'évaluation du modèle — dans un domaine différent de l'automobile, ce qui complète le panorama data eng (Reclaim) + industrie (DURA, PPM) par un projet ML appliqué.",
+          why: "Projet personnel sélectionné sur mon GitHub : celui qui montre le mieux une expertise deep learning / computer vision complète — du prétraitement d'images à l'évaluation du modèle — dans un domaine différent, ce qui complète le panorama IA générative (Forge, Frog Hub), extraction de documents (Surfaces) et industrie (DURA, PPM).",
           context: "Projet personnel d'exploration du deep learning appliqué à l'imagerie médicale, à partir d'un jeu public de radiographies thoraciques étiquetées sain / pneumonie.",
           problem: "Le diagnostic de pneumonie sur radiographie demande une lecture experte. L'enjeu technique était double : vérifier qu'un réseau convolutif peut apprendre les motifs pathologiques à partir d'images brutes, et surtout limiter les faux négatifs — un cas positif manqué coûte bien plus cher qu'une fausse alerte.",
           built: "Un CNN entraîné sur des images 150x150 RGB, avec quatre blocs convolution + pooling pour l'extraction de features, puis une couche dense (256 unités), du dropout (0.5) et une sortie sigmoïde pour la classification binaire. L'entraînement utilise l'optimiseur Adam, l'early stopping et la réduction du taux d'apprentissage sur plateau pour stabiliser la convergence. Le modèle est évalué via matrice de confusion et courbes accuracy/loss.",
@@ -200,7 +241,7 @@
     en: {
       meta: {
         title: "Nikola Vucic — Data Scientist / Data Engineer",
-        description: "Portfolio of Nikola Vucic, Data Scientist / Data Engineer apprentice at Emotors (Stellantis), looking for an internship from April to July."
+        description: "Portfolio of Nikola Vucic, Data Scientist / Data Engineer apprentice at Emotors (Stellantis) and founder of Zuri Solutions (generative AI, agents, custom software), looking for an internship from April to July."
       },
       nav: {
         home: "Home",
@@ -228,7 +269,7 @@
       about: {
         label: "about me!",
         banner: "About",
-        statement: "Big Data & AI engineering student at ECE Paris, working as a Data Scientist apprentice at Stellantis. I like automating, industrializing and shipping end to end — from data extraction all the way to deployment.",
+        statement: "Big Data & AI engineering student at ECE Paris, Data Scientist apprentice at Stellantis and founder of Zuri Solutions. I like automating, industrializing and shipping end to end — from data extraction all the way to AI agents in production.",
         lookingForTitle: "What I'm looking for",
         lookingFor1: "A 3-month internship, April to July, in Data / AI / Data Engineering",
         lookingFor2: "Hands-on missions: pipelines, data applications, automation, ML",
@@ -236,7 +277,7 @@
         bringTitle: "What I bring",
         bring1: "A strong execution mindset and end-to-end ownership",
         bring2: "Rigorous data work: structuring, ETL, quality, reproducibility",
-        bring3: "Applied AI: prototyping, evaluation, iteration",
+        bring3: "Generative AI in production: agents, RAG, evaluations and answer non-regression",
         chessTitle: "Chess",
         chessText: "Regular practice — strategic thinking and anticipation.",
         violinTitle: "Violin",
@@ -253,6 +294,10 @@
         cat6: "DevOps",
         cat7: "Front-end",
         cat8: "Scraping & Automation",
+        cat9: "Generative AI & LLMs",
+        agents: "Agents & tool use",
+        evals: "Evals & non-regression",
+        regression: "Regression",
         reproEnv: "Reproducible environments",
         pyScripts: "Python scripts"
       },
@@ -270,12 +315,17 @@
           moreDura: "See DURA",
           morePpm: "See Predictive Quality"
         },
-        reclaim: {
+        zuri: {
           role: "Founder",
-          meta: "Business Process Automation · Paris · 2026 → present",
-          p1: { title: "Business automation pipelines", text: "I build tailored automation solutions, adapted to each client's exact needs, to eliminate repetitive tasks and streamline their processes." },
-          p2: { title: "Impact", text: "Solutions delivered end to end, from extraction through to deployment: less manual processing on the client side and data made reliable by the validation step.", statValue: "End-to-end", statLabel: "extraction → deployment" },
-          more: "See Reclaim"
+          meta: "Generative AI & custom software · Paris · 2026 → present",
+          p1: { title: "The Forge — a multi-agent software factory", text: "Internal platform that builds our client software: 5 specialised AI agents driven by executable contracts, automatic non-regression and 4 human sign-offs from brief to production.", statValue: "5 agents · 8 phases", statLabel: "from brief to production" },
+          p2: { title: "Non-regression of AI answers", text: "Every AI component ships with a versioned evaluation set and thresholds (accuracy, hallucination, p95 latency, cost per request) replayed on every build: an answer that regresses blocks the release.", statValue: "≥ 90% · ≤ 5%", statLabel: "min. accuracy · max. hallucination" },
+          p3: { title: "Frog Hub — a group of 8 pubs", text: "Data hub linking tills, rotas, purchasing, bookings and accounting, 7 AI agents, 20 automations and a Claude copilot that answers with the hub's figures and cites its sources (RAG).", statValue: "10+ tools", statLabel: "connected to a single hub" },
+          p4: { title: "Floor-area extraction from PDF plans", text: "For Confier & Associés, a property-tax consulting firm: room-by-room extraction, confidence scoring, classification on a 74 room types × 16 activity types matrix, Excel export in the client's format.", statValue: "100% local", statLabel: "no plan ever leaves the machine" },
+          p5: { title: "Consulting & training", text: "Process audits and mapping, quick wins first, then AI / LLM training for client teams." },
+          moreForge: "See the Forge",
+          moreFrog: "See Frog Hub",
+          moreSurfaces: "See floor-area extraction"
         },
         circularplace: {
           role: "Assistant Product Manager",
@@ -289,13 +339,15 @@
       projects: {
         label: "my projects!",
         banner: "Projects",
-        note: "Four projects that sum up my range: data engineering, industrial platform, machine learning and computer vision.",
+        note: "Six projects that sum up my range: AI agents, data integration, document extraction, industrial platform, machine learning and computer vision.",
         viewProject: "View project",
         viewAll: "All projects in detail",
-        p1: { tab: "Project 01", date: "2026 — ongoing", desc: "Giving small businesses back the time lost to manual data entry: extraction from PDFs, validation before injection, CRM integration and event-driven workflows.", tag2: "Document extraction" },
-        p2: { tab: "Project 02", date: "Emotors · Stellantis", desc: "The platform automating durability studies: mission profiles, fatigue calculations and engineering KPIs. Analysis cycle cut from a month to a week." },
-        p3: { tab: "Project 03", date: "Emotors · Stellantis", title: "Predictive Quality", desc: "Models that anticipate PPM quality drifts from production and durability data, instead of noticing them after the fact.", tag2: "Modelling" },
-        p4: { tab: "Project 04", date: "Personal project", title: "Pneumonia CNN", desc: "A convolutional neural network telling healthy chest X-rays apart from pneumonia cases automatically.", tag3: "Computer Vision" }
+        forge: { tab: "Project 01", date: "Zuri Solutions · 2026", title: "The Forge", desc: "Our software factory: 5 AI agents driven by executable contracts, with automatic non-regression of both code and AI answers, all the way to production.", tag2: "AI agents", tag3: "LLM evals" },
+        froghub: { tab: "Project 02", date: "Zuri Solutions · Frog Pubs", title: "Frog Hub", desc: "The data hub of a group of 8 pubs: 10+ tools connected, 7 AI agents, 20 automations and a Claude copilot that answers with the real figures." },
+        surfaces: { tab: "Project 03", date: "Zuri Solutions · Confier & Associés", title: "Plans → Floor areas", desc: "Extracting floor areas from hundreds of PDF plans, making them reliable with a confidence score and classifying them with a business matrix, instead of re-keying them by hand." },
+        dura: { tab: "Project 04", date: "Emotors · Stellantis", desc: "The platform automating durability studies: mission profiles, fatigue calculations and engineering KPIs. Analysis cycle cut from a month to a week." },
+        ppm: { tab: "Project 05", date: "Emotors · Stellantis", title: "Predictive Quality", desc: "Models that anticipate PPM quality drifts from production and durability data, instead of noticing them after the fact.", tag2: "Modelling" },
+        pneumonia: { tab: "Project 06", date: "Personal project", title: "Pneumonia CNN", desc: "A convolutional neural network telling healthy chest X-rays apart from pneumonia cases automatically.", tag3: "Computer Vision" }
       },
       education: {
         label: "my studies!",
@@ -315,25 +367,55 @@
       projectsPage: {
         meta: {
           title: "Projects — Nikola Vucic",
-          description: "Detailed projects by Nikola Vucic: Reclaim, DURA, Predictive Quality (PPM) and pneumonia detection with a CNN."
+          description: "Detailed projects by Nikola Vucic: the Forge (AI agents), Frog Hub, floor-area extraction from PDF plans, DURA, Predictive Quality (PPM) and pneumonia detection with a CNN."
         },
         label: "what I've built!",
         banner: "Projects",
-        note: "Four projects in detail — context, problem, what I built, stack and measurable impact — followed by the rest of my GitHub repos.",
+        note: "Six projects in detail — context, problem, what I built, stack and impact — followed by the rest of my GitHub repos.",
         viewRepo: "View repo",
         internalNote: "Internal Stellantis project — code not public",
         labels: { context: "Context", problem: "Problem", built: "What I built", stack: "Tech stack" },
-        reclaim: {
-          eyebrow: "Business process automation · TypeScript",
-          context: "Small businesses and freelancers lose a considerable amount of time on low-value manual work: re-keying data from PDFs, chasing clients, syncing information between tools. I founded Reclaim to automate those business processes end to end.",
-          problem: "The data arrives in unstructured formats (PDFs, scanned documents, emails), has to be extracted, checked, then pushed into a CRM or a reporting system. Done by hand, it is slow, error-prone and leaves no audit trail.",
-          built: "Automation pipelines covering the whole chain: data extraction from PDFs and documents, a validation layer that guarantees reliability before anything is written, CRM integration and automation, and event-driven workflows (automatic reminders, data sync, scheduled reporting). The whole thing is designed to deploy and run without intervention.",
-          extractTag: "Document extraction",
-          crmTag: "API / CRM integrations",
-          eventTag: "Event-driven architecture",
-          stat1Value: "End-to-end", stat1Label: "from extraction through to deployment",
-          stat2Value: "Manual time reduced", stat2Label: "on recurring client processing",
-          stat3Value: "Data made reliable", stat3Label: "by the validation layer before injection"
+        forge: {
+          eyebrow: "Internal platform · Zuri Solutions · Python · Claude Code",
+          title: "The Forge",
+          note: "Internal Zuri tool — code not public",
+          why: "The project that best shows how I work: turning generative AI into a measurable engineering process, where nothing is \"done\" until an executable test has proved it.",
+          context: "At Zuri Solutions we deliver custom software and generative AI components for small and mid-sized businesses. To keep timelines short without giving up reliability, I built the Forge: the software factory that runs a client project from scoping all the way to production.",
+          problem: "An AI agent coding on its own declares \"done\" too early, breaks what already worked, invents API fields and can touch real data. And an LLM answer is not deterministic: without measurement, you cannot see it degrading from one prompt or model version to the next.",
+          built: "An orchestrator and 5 specialised agents (product, design, build, verification, review) that move forward through YAML contracts: each task declares its inputs, a measurable expected output and a verification command. Only the verifier decides whether something is done: it replays every contract on each pass and flags any regression. Tests are written by the verification agent and locked before the build agent writes code. For AI, contracts carry a versioned evaluation set and thresholds taken from the brief (accuracy, hallucination rate, p95 latency, cost per request): this is the answer non-regression algorithm, which blocks a release as soon as a score drops below its threshold. Around it: 8 phases with automatic gates and 4 human sign-offs, C1/C2/C3 criticality, an attempt budget that escalates to a stronger model, a secrets vault and a read-only API proxy, mandatory anonymisation of test data, guard-rail hooks, a live dashboard and notifications. Deployed on a VM (systemd, Tailscale) with versioned rollback.",
+          agentsTag: "Multi-agent orchestration", evalTag: "LLM evaluation", hooksTag: "Hooks & guard-rails",
+          stat1Value: "5 agents", stat1Label: "specialised, coordinated by an orchestrator",
+          stat2Value: "8 phases", stat2Label: "automatic gates and 4 human sign-offs",
+          stat3Value: "100% green", stat3Label: "contracts required before merge, push or release",
+          stat4Value: "4 AI metrics", stat4Label: "accuracy, hallucination, p95 latency, cost / request"
+        },
+        froghub: {
+          eyebrow: "Data hub & AI · Zuri Solutions · Node.js · Claude API",
+          title: "Frog Hub & Club Frog",
+          note: "Client project — code not public",
+          why: "A real client, from audit to product: mapping the processes of a pub group, then building the hub, the agents and the copilot that remove the manual work we found.",
+          context: "Frog Pubs runs 8 pubs in Paris, Bordeaux and Toulouse, plus a head office and a brewery. After an audit and a full map of their processes, Zuri is building their data hub and Club Frog, a loyalty programme built on top of the hub.",
+          problem: "More than ten business tools (tills, rotas, purchasing, bookings, payments, accounting) that don't talk to each other: re-keying at every close of service, reconciliations done by hand, different figures from one tool to the next, and 38 pain points found during the audit.",
+          built: "A complete prototype, then the real hub wired to the APIs. The hub unifies sources through adapters (same internal schema whether data arrives by API or by export) and gives each role the right figures: pub teams, management, operations, marketing, accounting, IT. 7 AI agents each have one job taken from the audit, and 20 automations (\"when → what → where\") send the right data to the right tool, automatically or after approval. Frog Copilot, built on Claude with tool use, answers with live hub figures and passages from internal documentation retrieved by a BM25 search engine (RAG). For production: read-only by default, idempotency, queues and backoff on API rate limits, no personal data in logs, and payments never depend on the hub.",
+          toolTag: "Tool use", apiTag: "API integrations", agentsTag: "AI agents",
+          stat1Value: "8 pubs · 10+ tools", stat1Label: "connected to a single data hub",
+          stat2Value: "7 agents · 20 automations", stat2Label: "each tied to a problem from the audit",
+          stat3Value: "38 pain points", stat3Label: "tracked with status, method and decision",
+          stat4Value: "Sourced copilot", stat4Label: "live figures + cited documentation"
+        },
+        surfaces: {
+          eyebrow: "Document extraction · Zuri Solutions · FastAPI · React",
+          title: "Plans → Floor areas",
+          note: "Client project — code not public",
+          why: "From raw extraction to reliable data: the project where the business rule matters as much as the parsing, with a confidence score that tells the consultant where to look.",
+          context: "For Confier & Associés, a consulting firm specialised in reassessing property tax on business premises. Each case is a batch of PDF floor plans whose room-by-room areas used to be copied out by hand.",
+          problem: "At the scale of hundreds of plans, re-keying doesn't hold up. And the business rule is tricky: a room's group (main area, circulation, other) depends on the property's activity type. Toilets count as circulation in a workshop, but as main area in a hotel.",
+          built: "A local platform where plans never leave the machine. It extracts room / area pairs from the PDF text with PyMuPDF, detects the floor, gives every line a 0–100 confidence score with its reasons (outlier area, doubtful label, suspicious pairing), normalises labels to the client's 74 room types, then resolves the group through a 74 room types × 16 activity types matrix with three levels of priority. The consultant corrects, renames or discards a line in the interface; each correction is tied to the PDF's fingerprint, and the Excel export comes out in the firm's expected format.",
+          excelTag: "Excel export",
+          stat1Value: "74 × 16", stat1Label: "room types × activity types matrix",
+          stat2Value: "0–100 score", stat2Label: "confidence per line, reasons shown",
+          stat3Value: "100% local", stat3Label: "no plan ever leaves the machine",
+          stat4Value: "Batch processing", stat4Label: "an unreadable PDF never stops the batch"
         },
         dura: {
           eyebrow: "Data platform · Emotors (Stellantis)",
@@ -359,7 +441,7 @@
         pneumonia: {
           eyebrow: "Deep learning · Medical imaging",
           title: "Pneumonia detection with a CNN",
-          why: "4th project selected from my GitHub: among my personal repos, this one best shows a complete deep learning / computer vision skillset — from image preprocessing to model evaluation — in a domain outside automotive, rounding out the data eng (Reclaim) + industry (DURA, PPM) picture with an applied ML project.",
+          why: "Personal project selected from my GitHub: the one that best shows a complete deep learning / computer vision skillset — from image preprocessing to model evaluation — in a different domain, rounding out the generative AI (Forge, Frog Hub), document extraction (Floor areas) and industry (DURA, PPM) picture.",
           context: "Personal project exploring deep learning applied to medical imaging, using a public chest X-ray dataset labelled normal / pneumonia.",
           problem: "Diagnosing pneumonia from an X-ray requires expert reading. The technical challenge was twofold: confirm that a convolutional network can learn pathological patterns from raw images, and above all keep false negatives down — a missed positive costs far more than a false alarm.",
           built: "A CNN trained on 150x150 RGB images, with four convolution + pooling blocks for feature extraction, followed by a dense layer (256 units), dropout (0.5) and a sigmoid output for binary classification. Training uses the Adam optimizer, early stopping and learning-rate reduction on plateau to stabilize convergence. The model is evaluated via a confusion matrix and accuracy/loss curves.",

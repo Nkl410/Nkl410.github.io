@@ -743,9 +743,11 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   .work__frame { aspect-ratio: auto; height: calc(100vh - 22rem); }
   /* Tabs cascade to the right so every one stays visible as panels stack */
   .work:nth-child(1) .work__tab-row { margin-left: 0; }
-  .work:nth-child(2) .work__tab-row { margin-left: min(calc(21% - 72px), calc(100% - 340px)); }
-  .work:nth-child(3) .work__tab-row { margin-left: min(calc(42% - 72px), calc(100% - 340px)); }
-  .work:nth-child(4) .work__tab-row { margin-left: min(calc(63% - 72px), calc(100% - 340px)); }
+  .work:nth-child(2) .work__tab-row { margin-left: min(calc(14% - 48px), calc(100% - 340px)); }
+  .work:nth-child(3) .work__tab-row { margin-left: min(calc(28% - 72px), calc(100% - 340px)); }
+  .work:nth-child(4) .work__tab-row { margin-left: min(calc(42% - 72px), calc(100% - 340px)); }
+  .work:nth-child(5) .work__tab-row { margin-left: min(calc(56% - 72px), calc(100% - 340px)); }
+  .work:nth-child(6) .work__tab-row { margin-left: min(calc(70% - 72px), calc(100% - 340px)); }
   .work__tab { padding: 1.35rem 5.5rem 1.35rem 2rem; font-size: 0.85rem; clip-path: var(--tab-clip-lg); }
 }
 

@@ -132,7 +132,7 @@
           <h2 class="display section__banner" data-i18n="about.banner">À propos</h2>
         </div>
 
-        <p class="about__statement reveal" data-i18n="about.statement">Ingénieur Big Data &amp; IA à l'ECE Paris, en alternance Data Scientist chez Stellantis. J'aime automatiser, industrialiser et livrer de bout en bout — de l'extraction de données jusqu'au déploiement.</p>
+        <p class="about__statement reveal" data-i18n="about.statement">Ingénieur Big Data &amp; IA à l'ECE Paris, Data Scientist en alternance chez Stellantis et fondateur de Zuri Solutions. J'aime automatiser, industrialiser et livrer de bout en bout — de l'extraction de données jusqu'aux agents IA en production.</p>
 
         <div class="about__panels">
           <div class="paper reveal">
@@ -148,7 +148,7 @@
             <ul class="bullets">
               <li data-i18n="about.bring1">Un mindset d'exécution et une ownership de bout en bout</li>
               <li data-i18n="about.bring2">Un travail data rigoureux : structuration, ETL, qualité, reproductibilité</li>
-              <li data-i18n="about.bring3">De l'IA appliquée : prototypage, évaluation, itération</li>
+              <li data-i18n="about.bring3">De l'IA générative en production : agents, RAG, évaluations et non-régression des réponses</li>
             </ul>
           </div>
         </div>
@@ -186,6 +186,7 @@
           <span class="sticker">SQL</span>
           <span class="sticker">PySpark</span>
           <span class="sticker">Machine Learning</span>
+          <span class="sticker">LLM &amp; Agents</span>
           <span class="sticker">Docker</span>
           <span class="sticker">PostgreSQL</span>
         </div>
@@ -198,9 +199,15 @@
             </div>
           </div>
           <div class="skill-card reveal">
+            <h3 class="skill-card__title" data-i18n="skills.cat9">IA générative &amp; LLM</h3>
+            <div class="skill-card__tags">
+              <span class="tag">Claude API</span><span class="tag">Claude Code</span><span class="tag" data-i18n="skills.agents">Agents &amp; tool use</span><span class="tag">RAG</span><span class="tag" data-i18n="skills.evals">Évals &amp; non-régression</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
             <h3 class="skill-card__title" data-i18n="skills.cat2">Data &amp; ML</h3>
             <div class="skill-card__tags">
-              <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">scikit-learn</span><span class="tag">CNN</span><span class="tag">Seaborn</span><span class="tag">Plotly</span>
+              <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">scikit-learn</span><span class="tag">TensorFlow</span><span class="tag" data-i18n="skills.regression">Régression</span><span class="tag">CNN</span><span class="tag">Seaborn</span><span class="tag">Plotly</span>
             </div>
           </div>
           <div class="skill-card reveal">
@@ -218,13 +225,13 @@
           <div class="skill-card reveal">
             <h3 class="skill-card__title" data-i18n="skills.cat5">APIs &amp; Backend</h3>
             <div class="skill-card__tags">
-              <span class="tag">Flask</span><span class="tag">FastAPI</span><span class="tag">REST</span>
+              <span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Node.js</span><span class="tag">REST</span><span class="tag">Webhooks</span>
             </div>
           </div>
           <div class="skill-card reveal">
             <h3 class="skill-card__title" data-i18n="skills.cat6">DevOps</h3>
             <div class="skill-card__tags">
-              <span class="tag">Docker</span><span class="tag" data-i18n="skills.reproEnv">Environnements reproductibles</span>
+              <span class="tag">Docker</span><span class="tag">Git</span><span class="tag">Linux / systemd</span><span class="tag" data-i18n="skills.reproEnv">Environnements reproductibles</span>
             </div>
           </div>
           <div class="skill-card reveal">
@@ -327,37 +334,75 @@
             </div>
           </article>
 
-          <!-- Reclaim -->
+          <!-- Zuri Solutions -->
           <article class="exp reveal">
             <span class="exp__dot" aria-hidden="true"></span>
             <div class="exp__head">
-              <h3 class="exp__role" data-i18n="experience.reclaim.role">Fondateur</h3>
-              <span class="exp__org">Reclaim</span>
+              <h3 class="exp__role" data-i18n="experience.zuri.role">Fondateur</h3>
+              <span class="exp__org">Zuri Solutions</span>
             </div>
-            <p class="exp__meta" data-i18n="experience.reclaim.meta">Business Process Automation · Paris · 2026 → présent</p>
+            <p class="exp__meta" data-i18n="experience.zuri.meta">IA générative &amp; logiciel sur mesure · Paris · 2026 → présent</p>
 
             <div class="exp__points">
               <div class="exp__point">
                 <div>
-                  <p class="exp__point-title" data-i18n="experience.reclaim.p1.title">Pipelines d'automatisation métier</p>
-                  <p class="exp__point-text" data-i18n="experience.reclaim.p1.text">Extraction de données depuis PDF et documents, couche de validation avant injection, intégration CRM et workflows événementiels (relances, synchronisation, reporting programmé).</p>
+                  <p class="exp__point-title" data-i18n="experience.zuri.p1.title">La Forge — usine logicielle multi-agents</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p1.text">Plateforme interne qui produit nos logiciels clients : 5 agents IA spécialisés pilotés par des contrats exécutables, non-régression automatique et 4 validations humaines du brief à la prod.</p>
+                </div>
+                <div class="stat">
+                  <span class="stat__value" data-i18n="experience.zuri.p1.statValue">5 agents · 8 phases</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p1.statLabel">du brief à la mise en production</span>
                 </div>
               </div>
               <div class="exp__point">
                 <div>
-                  <p class="exp__point-title" data-i18n="experience.reclaim.p2.title">Impact</p>
-                  <p class="exp__point-text" data-i18n="experience.reclaim.p2.text">Solutions livrées de bout en bout, de l'extraction jusqu'au déploiement : moins de traitement manuel côté clients et des données fiabilisées par l'étape de validation.</p>
+                  <p class="exp__point-title" data-i18n="experience.zuri.p2.title">Non-régression des réponses IA</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p2.text">Chaque brique IA est livrée avec un jeu d'évaluation versionné et des seuils (exactitude, hallucination, latence p95, coût par requête) rejoués à chaque build : une réponse qui régresse bloque la livraison.</p>
                 </div>
                 <div class="stat">
-                  <span class="stat__value" data-i18n="experience.reclaim.p2.statValue">Bout en bout</span>
-                  <span class="stat__label" data-i18n="experience.reclaim.p2.statLabel">extraction → déploiement</span>
+                  <span class="stat__value" data-i18n="experience.zuri.p2.statValue">≥ 90 % · ≤ 5 %</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p2.statLabel">exactitude min. · hallucination max.</span>
+                </div>
+              </div>
+              <div class="exp__point">
+                <div>
+                  <p class="exp__point-title" data-i18n="experience.zuri.p3.title">Frog Hub — groupe de 8 pubs</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p3.text">Hub de données reliant caisse, plannings, achats, réservations et compta, 7 agents IA, 20 automatisations et un copilote Claude qui répond avec les chiffres du hub et cite ses sources (RAG).</p>
+                </div>
+                <div class="stat">
+                  <span class="stat__value" data-i18n="experience.zuri.p3.statValue">10+ outils</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p3.statLabel">reliés à un hub unique</span>
+                </div>
+              </div>
+              <div class="exp__point">
+                <div>
+                  <p class="exp__point-title" data-i18n="experience.zuri.p4.title">Extraction de surfaces depuis des plans PDF</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p4.text">Pour Confier &amp; Associés, cabinet de conseil en fiscalité foncière : extraction pièce par pièce, score de confiance, classification sur une matrice 74 dénominations × 16 types d'activité, export Excel au format client.</p>
+                </div>
+                <div class="stat">
+                  <span class="stat__value" data-i18n="experience.zuri.p4.statValue">100 % local</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p4.statLabel">aucun plan ne quitte le poste</span>
+                </div>
+              </div>
+              <div class="exp__point">
+                <div>
+                  <p class="exp__point-title" data-i18n="experience.zuri.p5.title">Conseil & formation</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p5.text">Audit et cartographie des processus, quick wins d'abord, puis formations IA / LLM pour les équipes clientes.</p>
                 </div>
               </div>
             </div>
 
             <div class="exp__links">
-              <a class="link-arrow" href="projects.html#reclaim">
-                <span data-i18n="experience.reclaim.more">Voir Reclaim</span>
+              <a class="link-arrow" href="projects.html#forge">
+                <span data-i18n="experience.zuri.moreForge">Voir la Forge</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="link-arrow" href="projects.html#froghub">
+                <span data-i18n="experience.zuri.moreFrog">Voir Frog Hub</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="link-arrow" href="projects.html#surfaces">
+                <span data-i18n="experience.zuri.moreSurfaces">Voir l'extraction de surfaces</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
             </div>
@@ -423,49 +468,48 @@
           <span class="section-label__rule" aria-hidden="true"></span>
           <h2 class="display section__banner" data-i18n="projects.banner">Projets</h2>
           <p class="section__note">
-            <span class="tape-note" data-i18n="projects.note">Quatre projets qui résument ma palette : data engineering, plateforme industrielle, machine learning et computer vision.</span>
+            <span class="tape-note" data-i18n="projects.note">Six projets qui résument ma palette : agents IA, intégration de données, extraction de documents, plateforme industrielle, machine learning et computer vision.</span>
           </p>
         </div>
       </div>
 
       <div class="works">
-        <!-- 01 — Reclaim -->
+        <!-- 01 — La Forge -->
         <article class="work work--blue">
           <div class="work__tab-row">
             <span class="work__tab">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-              <span data-i18n="projects.p1.tab">Projet 01</span>
+              <span data-i18n="projects.forge.tab">Projet 01</span>
             </span>
           </div>
           <div class="work__panel">
             <div class="work__body">
-              <span class="work__date" data-i18n="projects.p1.date">2026 — en cours</span>
-              <h3 class="work__title">Reclaim</h3>
-              <p class="work__desc" data-i18n="projects.p1.desc">Rendre aux PME le temps perdu en saisie manuelle : extraction de données depuis des PDF, validation avant injection, intégration CRM et workflows événementiels.</p>
-              <a class="link-arrow work__link" href="projects.html#reclaim">
+              <span class="work__date" data-i18n="projects.forge.date">Zuri Solutions · 2026</span>
+              <h3 class="work__title" data-i18n="projects.forge.title">La Forge</h3>
+              <p class="work__desc" data-i18n="projects.forge.desc">Notre usine logicielle : 5 agents IA pilotés par des contrats exécutables, avec non-régression automatique du code et des réponses IA, jusqu'à la mise en production.</p>
+              <a class="link-arrow work__link" href="projects.html#forge">
                 <span data-i18n="projects.viewProject">Voir le projet</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
               <div class="work__tags">
-                <span class="tag">TypeScript</span>
-                <span class="tag" data-i18n="projects.p1.tag2">Extraction de documents</span>
-                <span class="tag">CRM</span>
+                <span class="tag">Python</span>
+                <span class="tag" data-i18n="projects.forge.tag2">Agents IA</span>
+                <span class="tag" data-i18n="projects.forge.tag3">Évals LLM</span>
               </div>
             </div>
             <div class="work__media">
               <div class="work__frame">
                 <div class="work__glyph">
                   <svg viewBox="0 0 200 200" fill="none" stroke="#191510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <rect x="22" y="24" width="58" height="74" rx="4"/>
-                    <path d="M34 44h34M34 58h34M34 72h22"/>
-                    <path d="M88 61h34m0 0-11-11m11 11-11 11" stroke="#ff6a35"/>
-                    <circle cx="152" cy="61" r="26"/>
-                    <path d="M152 47v8m0 12v8m-14-14h8m12 0h8" stroke="#ff6a35"/>
-                    <rect x="120" y="112" width="58" height="64" rx="4"/>
-                    <path d="M132 130h34M132 144h34M132 158h22"/>
-                    <path d="M112 145H78m0 0 11-11m-11 11 11 11" stroke="#ff6a35"/>
-                    <ellipse cx="50" cy="130" rx="28" ry="10"/>
-                    <path d="M22 130v26c0 5.5 12.5 10 28 10s28-4.5 28-10v-26"/>
+                    <rect x="24" y="30" width="44" height="34" rx="4"/>
+                    <rect x="24" y="84" width="44" height="34" rx="4"/>
+                    <rect x="24" y="138" width="44" height="34" rx="4"/>
+                    <path d="M68 47h22v104H68M68 101h28"/>
+                    <rect x="96" y="70" width="58" height="62" rx="6" stroke="#ff6a35"/>
+                    <path d="M110 101l10 10 20-22" stroke="#ff6a35"/>
+                    <path d="M154 101h18"/>
+                    <circle cx="178" cy="101" r="6" stroke="#ff6a35"/>
+                    <path d="M100 152h50M108 166h34" stroke-dasharray="6 6"/>
                   </svg>
                 </div>
               </div>
@@ -473,19 +517,99 @@
           </div>
         </article>
 
-        <!-- 02 — DURA -->
-        <article class="work work--green">
+        <!-- 02 — Frog Hub -->
+        <article class="work work--cyan">
           <div class="work__tab-row">
             <span class="work__tab">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-              <span data-i18n="projects.p2.tab">Projet 02</span>
+              <span data-i18n="projects.froghub.tab">Projet 02</span>
             </span>
           </div>
           <div class="work__panel">
             <div class="work__body">
-              <span class="work__date" data-i18n="projects.p2.date">Emotors · Stellantis</span>
+              <span class="work__date" data-i18n="projects.froghub.date">Zuri Solutions · Frog Pubs</span>
+              <h3 class="work__title" data-i18n="projects.froghub.title">Frog Hub</h3>
+              <p class="work__desc" data-i18n="projects.froghub.desc">Le hub de données d'un groupe de 8 pubs : 10+ outils reliés, 7 agents IA, 20 automatisations et un copilote Claude qui répond avec les vrais chiffres.</p>
+              <a class="link-arrow work__link" href="projects.html#froghub">
+                <span data-i18n="projects.viewProject">Voir le projet</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <div class="work__tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Claude API</span>
+                <span class="tag">RAG</span>
+              </div>
+            </div>
+            <div class="work__media">
+              <div class="work__frame">
+                <div class="work__glyph">
+                  <svg viewBox="0 0 200 200" fill="none" stroke="#191510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="100" cy="100" r="26" stroke="#ff6a35"/>
+                    <path d="M90 100h20M100 90v20" stroke="#ff6a35"/>
+                    <circle cx="40" cy="44" r="14"/><circle cx="160" cy="44" r="14"/>
+                    <circle cx="40" cy="156" r="14"/><circle cx="160" cy="156" r="14"/>
+                    <circle cx="100" cy="22" r="10"/><circle cx="100" cy="178" r="10"/>
+                    <path d="M51 54l30 27M149 54l-30 27M51 146l30-27M149 146l-30-27M100 32v42M100 126v42"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 — Plans → Surfaces -->
+        <article class="work work--mint">
+          <div class="work__tab-row">
+            <span class="work__tab">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+              <span data-i18n="projects.surfaces.tab">Projet 03</span>
+            </span>
+          </div>
+          <div class="work__panel">
+            <div class="work__body">
+              <span class="work__date" data-i18n="projects.surfaces.date">Zuri Solutions · Confier &amp; Associés</span>
+              <h3 class="work__title" data-i18n="projects.surfaces.title">Plans → Surfaces</h3>
+              <p class="work__desc" data-i18n="projects.surfaces.desc">Extraire les surfaces de centaines de plans PDF, les fiabiliser par un score de confiance et les classer selon une matrice métier, au lieu de les recopier à la main.</p>
+              <a class="link-arrow work__link" href="projects.html#surfaces">
+                <span data-i18n="projects.viewProject">Voir le projet</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <div class="work__tags">
+                <span class="tag">FastAPI</span>
+                <span class="tag">PyMuPDF</span>
+                <span class="tag">React</span>
+              </div>
+            </div>
+            <div class="work__media">
+              <div class="work__frame">
+                <div class="work__glyph">
+                  <svg viewBox="0 0 200 200" fill="none" stroke="#191510" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="24" y="28" width="152" height="120" rx="3"/>
+                    <path d="M24 86h72M96 28v120M96 104h80M136 28v76"/>
+                    <path d="M42 56h34M108 60h18M146 60h20" stroke="#ff6a35"/>
+                    <path d="M40 118h40M112 128h46" stroke="#ff6a35"/>
+                    <path d="M40 166h120M40 160v12M160 160v12"/>
+                    <path d="M84 182h32" stroke="#ff6a35" stroke-dasharray="6 6"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 — DURA -->
+        <article class="work work--green">
+          <div class="work__tab-row">
+            <span class="work__tab">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+              <span data-i18n="projects.dura.tab">Projet 04</span>
+            </span>
+          </div>
+          <div class="work__panel">
+            <div class="work__body">
+              <span class="work__date" data-i18n="projects.dura.date">Emotors · Stellantis</span>
               <h3 class="work__title">DURA</h3>
-              <p class="work__desc" data-i18n="projects.p2.desc">La plateforme qui automatise les études de durabilité : profils de mission, calculs de fatigue et KPIs ingénierie. Cycle d'analyse ramené d'un mois à une semaine.</p>
+              <p class="work__desc" data-i18n="projects.dura.desc">La plateforme qui automatise les études de durabilité : profils de mission, calculs de fatigue et KPIs ingénierie. Cycle d'analyse ramené d'un mois à une semaine.</p>
               <a class="link-arrow work__link" href="projects.html#dura">
                 <span data-i18n="projects.viewProject">Voir le projet</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -512,26 +636,26 @@
           </div>
         </article>
 
-        <!-- 03 — PPM -->
+        <!-- 05 — PPM -->
         <article class="work work--magenta">
           <div class="work__tab-row">
             <span class="work__tab">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-              <span data-i18n="projects.p3.tab">Projet 03</span>
+              <span data-i18n="projects.ppm.tab">Projet 05</span>
             </span>
           </div>
           <div class="work__panel">
             <div class="work__body">
-              <span class="work__date" data-i18n="projects.p3.date">Emotors · Stellantis</span>
-              <h3 class="work__title" data-i18n="projects.p3.title">Predictive Quality</h3>
-              <p class="work__desc" data-i18n="projects.p3.desc">Des modèles qui anticipent les dérives qualité PPM à partir des données de production et de durabilité, au lieu de les constater après coup.</p>
+              <span class="work__date" data-i18n="projects.ppm.date">Emotors · Stellantis</span>
+              <h3 class="work__title" data-i18n="projects.ppm.title">Predictive Quality</h3>
+              <p class="work__desc" data-i18n="projects.ppm.desc">Des modèles qui anticipent les dérives qualité PPM à partir des données de production et de durabilité, au lieu de les constater après coup.</p>
               <a class="link-arrow work__link" href="projects.html#ppm">
                 <span data-i18n="projects.viewProject">Voir le projet</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
               <div class="work__tags">
                 <span class="tag">scikit-learn</span>
-                <span class="tag" data-i18n="projects.p3.tag2">Modélisation</span>
+                <span class="tag" data-i18n="projects.ppm.tag2">Modélisation</span>
                 <span class="tag">KPI</span>
               </div>
             </div>
@@ -552,19 +676,19 @@
           </div>
         </article>
 
-        <!-- 04 — Pneumonia CNN -->
+        <!-- 06 — Pneumonia CNN -->
         <article class="work work--yellow">
           <div class="work__tab-row">
             <span class="work__tab">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-              <span data-i18n="projects.p4.tab">Projet 04</span>
+              <span data-i18n="projects.pneumonia.tab">Projet 06</span>
             </span>
           </div>
           <div class="work__panel">
             <div class="work__body">
-              <span class="work__date" data-i18n="projects.p4.date">Projet personnel</span>
-              <h3 class="work__title" data-i18n="projects.p4.title">Pneumonia CNN</h3>
-              <p class="work__desc" data-i18n="projects.p4.desc">Un réseau de neurones convolutif qui distingue automatiquement les radiographies pulmonaires saines des cas de pneumonie.</p>
+              <span class="work__date" data-i18n="projects.pneumonia.date">Projet personnel</span>
+              <h3 class="work__title" data-i18n="projects.pneumonia.title">Pneumonia CNN</h3>
+              <p class="work__desc" data-i18n="projects.pneumonia.desc">Un réseau de neurones convolutif qui distingue automatiquement les radiographies pulmonaires saines des cas de pneumonie.</p>
               <a class="link-arrow work__link" href="projects.html#pneumonia">
                 <span data-i18n="projects.viewProject">Voir le projet</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -572,7 +696,7 @@
               <div class="work__tags">
                 <span class="tag">TensorFlow</span>
                 <span class="tag">CNN</span>
-                <span class="tag" data-i18n="projects.p4.tag3">Computer Vision</span>
+                <span class="tag" data-i18n="projects.pneumonia.tag3">Computer Vision</span>
               </div>
             </div>
             <div class="work__media">
