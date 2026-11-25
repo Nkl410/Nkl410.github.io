@@ -16,7 +16,7 @@
     fr: {
       meta: {
         title: "Nikola Vucic — Data Scientist / Data Engineer",
-        description: "Portfolio de Nikola Vucic, Data Scientist / Data Engineer en alternance chez Emotors (Stellantis) et fondateur de Zuri Solutions (IA générative, agents, logiciel sur mesure), à la recherche d'un stage d'avril à juillet."
+        description: "Portfolio de Nikola Vucic, Data Scientist / Data Engineer en alternance chez Emotors (Stellantis) et fondateur de Zuri Solutions (IA générative, agents, logiciel sur mesure), à la recherche d'une alternance data pour l'année 2027-2028."
       },
       nav: {
         home: "Accueil",
@@ -33,8 +33,8 @@
         photoCaption: "Paris, 2026",
         pillRole: "Data Scientist",
         pillPlace: "Paris, France",
-        pillInternship: "Stage avril → juillet",
-        noteInternship: "stage d'avril à juillet — dispo !",
+        pillInternship: "Alternance 2027 → 2028",
+        noteInternship: "alternance data 2027-2028 — dispo !",
         noteJob: "alternance chez Emotors · Stellantis",
         statement1: "Je transforme des données brutes en outils qui",
         statement2: "créent de la valeur concrète.",
@@ -46,7 +46,7 @@
         banner: "À propos",
         statement: "Ingénieur Big Data & IA à l'ECE Paris, Data Scientist en alternance chez Stellantis et fondateur de Zuri Solutions. J'aime automatiser, industrialiser et livrer de bout en bout — de l'extraction de données jusqu'aux agents IA en production.",
         lookingForTitle: "Ce que je recherche",
-        lookingFor1: "Un stage de 3 mois, d'avril à juillet, en Data / IA / Data Engineering",
+        lookingFor1: "Une alternance pour l'année 2027-2028 en Data Science / Data Engineering / IA",
         lookingFor2: "Des missions concrètes : pipelines, applications data, automatisation, ML",
         lookingFor3: "Une équipe avec de vrais enjeux produit et business",
         bringTitle: "Ce que j'apporte",
@@ -131,7 +131,7 @@
         iaschool: { title: "Bachelor Intelligence Artificielle & Business", item2: "Mathématiques appliquées", item3: "Marketing" }
       },
       contact: {
-        cardNote: "Ouvert aux stages data / IA d'avril à juillet, et à toute conversation sur un problème de données intéressant.",
+        cardNote: "Ouvert aux alternances data / IA pour 2027-2028, et à toute conversation sur un problème de données intéressant.",
         tagline: "construisons quelque chose ensemble",
         word: "Contact",
         cta: "M'écrire"
@@ -241,7 +241,7 @@
     en: {
       meta: {
         title: "Nikola Vucic — Data Scientist / Data Engineer",
-        description: "Portfolio of Nikola Vucic, Data Scientist / Data Engineer apprentice at Emotors (Stellantis) and founder of Zuri Solutions (generative AI, agents, custom software), looking for an internship from April to July."
+        description: "Portfolio of Nikola Vucic, Data Scientist / Data Engineer apprentice at Emotors (Stellantis) and founder of Zuri Solutions (generative AI, agents, custom software), looking for a data apprenticeship for the 2027-2028 academic year."
       },
       nav: {
         home: "Home",
@@ -258,8 +258,8 @@
         photoCaption: "Paris, 2026",
         pillRole: "Data Scientist",
         pillPlace: "Paris, France",
-        pillInternship: "Internship April → July",
-        noteInternship: "internship from April to July — available!",
+        pillInternship: "Apprenticeship 2027 → 2028",
+        noteInternship: "data apprenticeship 2027-2028 — available!",
         noteJob: "apprentice at Emotors · Stellantis",
         statement1: "I turn raw data into tools that",
         statement2: "create real, measurable value.",
@@ -271,7 +271,7 @@
         banner: "About",
         statement: "Big Data & AI engineering student at ECE Paris, Data Scientist apprentice at Stellantis and founder of Zuri Solutions. I like automating, industrializing and shipping end to end — from data extraction all the way to AI agents in production.",
         lookingForTitle: "What I'm looking for",
-        lookingFor1: "A 3-month internship, April to July, in Data / AI / Data Engineering",
+        lookingFor1: "An apprenticeship for the 2027-2028 year in Data Science / Data Engineering / AI",
         lookingFor2: "Hands-on missions: pipelines, data applications, automation, ML",
         lookingFor3: "A team with real product and business stakes",
         bringTitle: "What I bring",
@@ -356,7 +356,7 @@
         iaschool: { title: "Bachelor in Artificial Intelligence & Business", item2: "Applied Mathematics", item3: "Marketing" }
       },
       contact: {
-        cardNote: "Open to data / AI internships from April to July, and to any conversation about an interesting data problem.",
+        cardNote: "Open to data / AI apprenticeships for 2027-2028, and to any conversation about an interesting data problem.",
         tagline: "let's build something together",
         word: "Contact",
         cta: "Email me"
