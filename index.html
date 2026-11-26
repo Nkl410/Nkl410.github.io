@@ -132,7 +132,7 @@
           <h2 class="display section__banner" data-i18n="about.banner">À propos</h2>
         </div>
 
-        <p class="about__statement reveal" data-i18n="about.statement">Data Scientist / Data Engineer et CTO de Zuri Solutions. Je conçois des plateformes data et des modèles de machine learning et de deep learning, puis je les mets en production.</p>
+        <p class="about__statement reveal" data-i18n="about.statement">Data Scientist / Data Engineer et CTO de Zuri Solutions. Je conçois des plateformes data, des modèles de machine learning et de deep learning et des agents IA, puis je les mets en production.</p>
 
         <div class="about__panels">
           <div class="paper reveal">
@@ -148,7 +148,7 @@
             <ul class="bullets">
               <li data-i18n="about.bring1">Un mindset d'exécution et une ownership de bout en bout</li>
               <li data-i18n="about.bring2">Un travail data rigoureux : structuration, ETL, qualité, reproductibilité</li>
-              <li data-i18n="about.bring3">Du ML et du deep learning appliqués : modélisation, évaluation, mise en production</li>
+              <li data-i18n="about.bring3">Du ML, du deep learning et des agents IA en production : modélisation, évaluation, déploiement</li>
             </ul>
           </div>
         </div>
@@ -271,10 +271,16 @@
 
             <div class="exp__points">
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.emotors.p1.title">Data Engineer</p>
                   <p class="exp__point-roles" data-i18n="experience.emotors.p1.roles">Python · PostgreSQL · Flask · Parquet</p>
-                  <p class="exp__point-text" data-i18n="experience.emotors.p1.text">Création de A à Z de la plateforme data : ingestion, base de données, APIs et interface.</p>
+                  <p class="exp__point-text" data-i18n="experience.emotors.p1.text">Conception et développement de A à Z de la plateforme data de l'équipe durabilité.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.emotors.p1.items.0">Pipelines d'ingestion de séries temporelles volumineuses (.mat, CSV → Parquet)</li>
+                    <li data-i18n="experience.emotors.p1.items.1">Modélisation et administration d'une base PostgreSQL de 24 tables</li>
+                    <li data-i18n="experience.emotors.p1.items.2">APIs REST Flask et interface web pour exploiter les analyses</li>
+                    <li data-i18n="experience.emotors.p1.items.3">10+ modules de calcul réutilisables, traçabilité de la donnée brute jusqu'aux résultats</li>
+                  </ul>
                 </div>
                 <div class="stat">
                   <span class="stat__value" data-i18n="experience.emotors.p1.statValue">~10 Go/mois</span>
@@ -282,24 +288,39 @@
                 </div>
               </div>
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.emotors.p2.title">DevOps</p>
                   <p class="exp__point-roles" data-i18n="experience.emotors.p2.roles">Azure · CI/CD · Docker · Databricks</p>
-                  <p class="exp__point-text" data-i18n="experience.emotors.p2.text">Mise en production sur Azure : pipelines de déploiement, conteneurisation et environnements reproductibles.</p>
+                  <p class="exp__point-text" data-i18n="experience.emotors.p2.text">Industrialisation et mise en production de la plateforme sur Azure.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.emotors.p2.items.0">Pipelines CI/CD de build et de déploiement</li>
+                    <li data-i18n="experience.emotors.p2.items.1">Conteneurisation Docker et environnements reproductibles, du dev à la prod</li>
+                    <li data-i18n="experience.emotors.p2.items.2">Traitements distribués sur Databricks pour passer à l'échelle</li>
+                  </ul>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.emotors.p3.title">Deep Learning Engineer</p>
                   <p class="exp__point-roles" data-i18n="experience.emotors.p3.roles">CNN · Computer Vision</p>
-                  <p class="exp__point-text" data-i18n="experience.emotors.p3.text">Modèle CNN de détection de défaillances moteur.</p>
+                  <p class="exp__point-text" data-i18n="experience.emotors.p3.text">Modèle de deep learning qui détecte automatiquement les défaillances moteur.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.emotors.p3.items.0">Construction et prétraitement du jeu de données</li>
+                    <li data-i18n="experience.emotors.p3.items.1">Conception, entraînement et évaluation d'un réseau convolutif (CNN)</li>
+                  </ul>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.emotors.p4.title">ML Engineer</p>
                   <p class="exp__point-roles" data-i18n="experience.emotors.p4.roles">Python · SciPy · Modèles prédictifs</p>
-                  <p class="exp__point-text" data-i18n="experience.emotors.p4.text">Prédiction des pièces défaillantes pour anticiper les dérives qualité.</p>
+                  <p class="exp__point-text" data-i18n="experience.emotors.p4.text">Modèles qui anticipent les pièces défaillantes avant qu'elles n'apparaissent dans les indicateurs qualité.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.emotors.p4.items.0">Modélisation statistique de la fiabilité (loi de Weibull) par mode de défaillance</li>
+                    <li data-i18n="experience.emotors.p4.items.1">Projection des taux de défaillance sur les productions récentes</li>
+                    <li data-i18n="experience.emotors.p4.items.2">Backtest systématique des prédictions</li>
+                    <li data-i18n="experience.emotors.p4.items.3">Rapports PowerPoint générés automatiquement</li>
+                  </ul>
                 </div>
                 <div class="stat">
                   <span class="stat__value" data-i18n="experience.emotors.p4.statValue">10 / 10</span>
@@ -307,10 +328,15 @@
                 </div>
               </div>
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.emotors.p5.title">Data Scientist</p>
                   <p class="exp__point-roles" data-i18n="experience.emotors.p5.roles">Python · NumPy · Traitement d'image</p>
-                  <p class="exp__point-text" data-i18n="experience.emotors.p5.text">Traitement d'image pixel par pixel, reconstitution des calculs en Python et optimisation de leurs performances.</p>
+                  <p class="exp__point-text" data-i18n="experience.emotors.p5.text">Reconstitution et accélération des calculs d'analyse.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.emotors.p5.items.0">Traitement d'image pixel par pixel sur les matrices de mesure</li>
+                    <li data-i18n="experience.emotors.p5.items.1">Réécriture en Python des calculs d'ingénierie (comptage de cycles, lois d'endommagement)</li>
+                    <li data-i18n="experience.emotors.p5.items.2">Optimisation des performances de calcul</li>
+                  </ul>
                 </div>
                 <div class="stat">
                   <span class="stat__value" data-i18n="experience.emotors.p5.statValue">1 mois → 1 semaine</span>
@@ -342,58 +368,104 @@
 
             <div class="exp__points">
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.zuri.p1.title">CTO</p>
-                  <p class="exp__point-roles" data-i18n="experience.zuri.p1.roles">Architecture · Agents IA · Gestion de projet</p>
-                  <p class="exp__point-text" data-i18n="experience.zuri.p1.text">Direction technique : architecture, choix des stacks et pilotage des projets clients jusqu'à la mise en production. Conception de la Forge, notre plateforme de production logicielle multi-agents.</p>
+                  <p class="exp__point-roles" data-i18n="experience.zuri.p1.roles">Architecture · Stack · Gestion de projet</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p1.text">Direction technique de Zuri et de ses projets clients, du cadrage à la mise en production.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.zuri.p1.items.0">Architecture des solutions et choix des stacks</li>
+                    <li data-i18n="experience.zuri.p1.items.1">Pilotage des projets : cahier des charges, jalons, validations client</li>
+                    <li data-i18n="experience.zuri.p1.items.2">Choix des modèles IA et estimation de leur coût</li>
+                  </ul>
                 </div>
                 <div class="stat">
-                  <span class="stat__value" data-i18n="experience.zuri.p1.statValue">5 agents · 8 phases</span>
-                  <span class="stat__label" data-i18n="experience.zuri.p1.statLabel">plateforme la Forge</span>
+                  <span class="stat__value" data-i18n="experience.zuri.p1.statValue">4 validations</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p1.statLabel">client par projet, du brief à la prod</span>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
-                  <p class="exp__point-title" data-i18n="experience.zuri.p2.title">Data Engineer</p>
-                  <p class="exp__point-roles" data-i18n="experience.zuri.p2.roles">Python · Node.js · API &amp; webhooks</p>
-                  <p class="exp__point-text" data-i18n="experience.zuri.p2.text">Hubs de données qui unifient les outils des clients dans un même schéma, avec KPI et automatisations.</p>
+                <div class="exp__point-body">
+                  <p class="exp__point-title" data-i18n="experience.zuri.p2.title">AI Engineer · Agents IA</p>
+                  <p class="exp__point-roles" data-i18n="experience.zuri.p2.roles">LLM · Multi-agents · Tool use</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p2.text">Conception de la Forge, notre plateforme où des agents IA produisent, testent et livrent du logiciel.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.zuri.p2.items.0">Orchestrateur et 5 agents spécialisés : produit, design, build, vérification, revue</li>
+                    <li data-i18n="experience.zuri.p2.items.1">Contrats exécutables : chaque tâche a une sortie mesurable et un test verrouillé avant le code</li>
+                    <li data-i18n="experience.zuri.p2.items.2">Garde-fous : hooks, budget de tentatives, escalade vers un humain</li>
+                    <li data-i18n="experience.zuri.p2.items.3">Agents IA chez nos clients, branchés sur leurs outils</li>
+                  </ul>
                 </div>
                 <div class="stat">
-                  <span class="stat__value" data-i18n="experience.zuri.p2.statValue">10+ sources</span>
-                  <span class="stat__label" data-i18n="experience.zuri.p2.statLabel">unifiées</span>
+                  <span class="stat__value" data-i18n="experience.zuri.p2.statValue">5 agents · 8 phases</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p2.statLabel">plateforme la Forge</span>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
-                  <p class="exp__point-title" data-i18n="experience.zuri.p3.title">ML / LLM Engineer</p>
-                  <p class="exp__point-roles" data-i18n="experience.zuri.p3.roles">LLM · RAG · Évaluation de modèles</p>
-                  <p class="exp__point-text" data-i18n="experience.zuri.p3.text">Copilotes IA sur les données et la documentation des clients, évaluation des modèles et tests de non-régression à chaque build.</p>
+                <div class="exp__point-body">
+                  <p class="exp__point-title" data-i18n="experience.zuri.p3.title">Data Engineer</p>
+                  <p class="exp__point-roles" data-i18n="experience.zuri.p3.roles">Python · Node.js · API &amp; webhooks</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p3.text">Hubs de données qui centralisent les outils de nos clients.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.zuri.p3.items.0">Connecteurs API et webhooks vers 10+ outils SaaS</li>
+                    <li data-i18n="experience.zuri.p3.items.1">Schéma interne unique, que la donnée arrive par API ou par export</li>
+                    <li data-i18n="experience.zuri.p3.items.2">Ingestion fiable : idempotence, files d'attente, gestion des limites d'API</li>
+                    <li data-i18n="experience.zuri.p3.items.3">KPI et automatisations pilotés par la donnée</li>
+                  </ul>
                 </div>
                 <div class="stat">
-                  <span class="stat__value" data-i18n="experience.zuri.p3.statValue">4 métriques</span>
-                  <span class="stat__label" data-i18n="experience.zuri.p3.statLabel">suivies à chaque build</span>
+                  <span class="stat__value" data-i18n="experience.zuri.p3.statValue">10+ sources</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p3.statLabel">unifiées</span>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
-                  <p class="exp__point-title" data-i18n="experience.zuri.p4.title">Data Scientist</p>
-                  <p class="exp__point-roles" data-i18n="experience.zuri.p4.roles">Python · PyMuPDF · pandas</p>
-                  <p class="exp__point-text" data-i18n="experience.zuri.p4.text">Extraction et fiabilisation de données à partir de documents, score de confiance et classification automatique.</p>
+                <div class="exp__point-body">
+                  <p class="exp__point-title" data-i18n="experience.zuri.p4.title">ML / LLM Engineer</p>
+                  <p class="exp__point-roles" data-i18n="experience.zuri.p4.roles">LLM · RAG · Évaluation de modèles</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p4.text">Copilotes IA et évaluation continue des modèles.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.zuri.p4.items.0">Copilote LLM avec tool use, branché sur les données en direct</li>
+                    <li data-i18n="experience.zuri.p4.items.1">RAG sur la documentation interne, réponses sourcées</li>
+                    <li data-i18n="experience.zuri.p4.items.2">Jeux d'évaluation versionnés : exactitude, hallucination, latence p95, coût</li>
+                    <li data-i18n="experience.zuri.p4.items.3">Tests de non-régression : une baisse de score bloque la livraison</li>
+                  </ul>
                 </div>
                 <div class="stat">
-                  <span class="stat__value" data-i18n="experience.zuri.p4.statValue">Score 0–100</span>
-                  <span class="stat__label" data-i18n="experience.zuri.p4.statLabel">de confiance par ligne</span>
+                  <span class="stat__value" data-i18n="experience.zuri.p4.statValue">4 métriques</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p4.statLabel">suivies à chaque build</span>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
-                  <p class="exp__point-title" data-i18n="experience.zuri.p5.title">DevOps</p>
-                  <p class="exp__point-roles" data-i18n="experience.zuri.p5.roles">Linux · Docker · systemd · Caddy</p>
-                  <p class="exp__point-text" data-i18n="experience.zuri.p5.text">Infrastructure Linux, conteneurs, déploiements versionnés avec retour arrière et gestion des secrets.</p>
+                <div class="exp__point-body">
+                  <p class="exp__point-title" data-i18n="experience.zuri.p5.title">Data Scientist</p>
+                  <p class="exp__point-roles" data-i18n="experience.zuri.p5.roles">Python · PyMuPDF · pandas</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p5.text">Extraction et fiabilisation de données à partir de documents.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.zuri.p5.items.0">Parsing de PDF à grande échelle</li>
+                    <li data-i18n="experience.zuri.p5.items.1">Score de confiance et détection des valeurs aberrantes</li>
+                    <li data-i18n="experience.zuri.p5.items.2">Normalisation et classification automatique sur une matrice de règles</li>
+                    <li data-i18n="experience.zuri.p5.items.3">Exports Excel prêts à l'emploi</li>
+                  </ul>
                 </div>
                 <div class="stat">
-                  <span class="stat__value" data-i18n="experience.zuri.p5.statValue">1 commande</span>
-                  <span class="stat__label" data-i18n="experience.zuri.p5.statLabel">pour déployer ou revenir en arrière</span>
+                  <span class="stat__value" data-i18n="experience.zuri.p5.statValue">Score 0–100</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p5.statLabel">de confiance par ligne</span>
+                </div>
+              </div>
+              <div class="exp__point">
+                <div class="exp__point-body">
+                  <p class="exp__point-title" data-i18n="experience.zuri.p6.title">DevOps</p>
+                  <p class="exp__point-roles" data-i18n="experience.zuri.p6.roles">Linux · Docker · systemd · Caddy</p>
+                  <p class="exp__point-text" data-i18n="experience.zuri.p6.text">Infrastructure et déploiement de nos plateformes.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.zuri.p6.items.0">VM Linux, services systemd, réseau privé Tailscale</li>
+                    <li data-i18n="experience.zuri.p6.items.1">Applications conteneurisées : Docker Compose, PostgreSQL, Redis, Caddy en HTTPS</li>
+                    <li data-i18n="experience.zuri.p6.items.2">Déploiements versionnés avec retour arrière</li>
+                    <li data-i18n="experience.zuri.p6.items.3">Coffre à secrets et proxy d'API en lecture seule</li>
+                  </ul>
+                </div>
+                <div class="stat">
+                  <span class="stat__value" data-i18n="experience.zuri.p6.statValue">1 commande</span>
+                  <span class="stat__label" data-i18n="experience.zuri.p6.statLabel">pour déployer ou revenir en arrière</span>
                 </div>
               </div>
             </div>
@@ -425,39 +497,56 @@
 
             <div class="exp__points">
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.circularplace.p1.title">Data Engineer</p>
                   <p class="exp__point-roles" data-i18n="experience.circularplace.p1.roles">Python · Automatisation · QA</p>
-                  <p class="exp__point-text" data-i18n="experience.circularplace.p1.text">5+ solutions d'automatisation des données et workflows QA automatisés.</p>
+                  <p class="exp__point-text" data-i18n="experience.circularplace.p1.text">Automatisation des flux de données et de la qualité.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.circularplace.p1.items.0">5+ solutions d'automatisation de la gestion des données</li>
+                    <li data-i18n="experience.circularplace.p1.items.1">Workflows QA automatisés</li>
+                  </ul>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.circularplace.p2.title">ML / DL Engineer</p>
                   <p class="exp__point-roles" data-i18n="experience.circularplace.p2.roles">CNN · Régression</p>
-                  <p class="exp__point-text" data-i18n="experience.circularplace.p2.text">CNN de classification produit et modèle de régression pour la prédiction de prix.</p>
+                  <p class="exp__point-text" data-i18n="experience.circularplace.p2.text">Modèles IA intégrés au produit.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.circularplace.p2.items.0">CNN de classification d'images produit</li>
+                    <li data-i18n="experience.circularplace.p2.items.1">Modèle de régression pour la prédiction de prix</li>
+                    <li data-i18n="experience.circularplace.p2.items.2">Base et calculateur d'impact CO₂</li>
+                  </ul>
                 </div>
                 <div class="stat">
-                  <span class="stat__value">±5 %</span>
+                  <span class="stat__value" data-i18n="experience.circularplace.p2.statValue">±5 %</span>
                   <span class="stat__label" data-i18n="experience.circularplace.p2.statLabel">d'erreur sur la prédiction de prix</span>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.circularplace.p3.title">Data Scientist</p>
                   <p class="exp__point-roles" data-i18n="experience.circularplace.p3.roles">Python · APIs · Scraping</p>
-                  <p class="exp__point-text" data-i18n="experience.circularplace.p3.text">Collecte et analyse de données via Python, APIs et scraping.</p>
+                  <p class="exp__point-text" data-i18n="experience.circularplace.p3.text">Collecte et analyse de données pour l'évaluation d'actifs.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.circularplace.p3.items.0">Extraction via Python, APIs et BeautifulSoup</li>
+                    <li data-i18n="experience.circularplace.p3.items.1">Nettoyage et analyse des données collectées</li>
+                  </ul>
                 </div>
                 <div class="stat">
-                  <span class="stat__value">2 000+</span>
+                  <span class="stat__value" data-i18n="experience.circularplace.p3.statValue">2 000+</span>
                   <span class="stat__label" data-i18n="experience.circularplace.p3.statLabel">points de données</span>
                 </div>
               </div>
               <div class="exp__point">
-                <div>
+                <div class="exp__point-body">
                   <p class="exp__point-title" data-i18n="experience.circularplace.p4.title">Chef de projet</p>
                   <p class="exp__point-roles" data-i18n="experience.circularplace.p4.roles">Agile · Product</p>
-                  <p class="exp__point-text" data-i18n="experience.circularplace.p4.text">Lancement d'une plateforme B2B en Agile, 10+ fonctionnalités livrées.</p>
+                  <p class="exp__point-text" data-i18n="experience.circularplace.p4.text">Lancement d'une plateforme B2B.</p>
+                  <ul class="exp__point-list">
+                    <li data-i18n="experience.circularplace.p4.items.0">Méthode Agile, 10+ fonctionnalités livrées</li>
+                    <li data-i18n="experience.circularplace.p4.items.1">Coordination entre équipes produit, tech et opérations</li>
+                  </ul>
                 </div>
                 <div class="stat">
                   <span class="stat__value" data-i18n="experience.circularplace.p4.statValue">3+ équipes</span>

@@ -629,22 +629,34 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 0.75rem 1.75rem;
-  align-items: center;
-  padding: 1.1rem 1.3rem;
+  align-items: start;
+  padding: 1.25rem 1.4rem;
   background: var(--white);
   border: 2px solid var(--ink);
+  box-shadow: var(--shadow-hard-sm);
 }
-.exp__point-title { font-weight: 600; margin-bottom: 0.25rem; }
+.exp__point-title { font-size: 1.08rem; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; }
 .exp__point-roles {
+  margin-top: 0.3rem;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--orange, #ff6a35);
-  margin-bottom: 0.4rem;
+  color: var(--orange);
 }
-.exp__point-text { font-size: 0.92rem; }
+.exp__point-text { margin-top: 0.7rem; font-size: 0.95rem; font-weight: 500; line-height: 1.5; color: var(--ink); }
+.exp__point-list { margin-top: 0.55rem; display: grid; gap: 0.35rem; }
+.exp__point-list li { position: relative; padding-left: 1.15rem; font-size: 0.88rem; line-height: 1.5; color: var(--ink-70); }
+.exp__point-list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 0.45rem; height: 0.45rem;
+  background: var(--orange);
+  clip-path: var(--sticker-round);
+}
+.exp__point .stat { padding-top: 0.2rem; }
 .exp__links { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 1.5rem; }
 @media (max-width: 700px) { .exp__point { grid-template-columns: 1fr; } }
 
