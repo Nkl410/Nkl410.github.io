@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="projectsPage.meta.title">Projets — Nikola Vucic</title>
-  <meta name="description" content="Détail des projets de Nikola Vucic : la Forge (agents IA), Frog Hub, extraction de surfaces depuis des plans PDF, DURA, Predictive Quality (PPM) et détection de pneumonie par CNN." data-i18n="projectsPage.meta.description" data-i18n-attr="content" />
+  <meta name="description" content="Projets de Nikola Vucic : DURA, Predictive Quality (PPM), détection de pneumonie par CNN, Frog Hub, extraction de surfaces depuis des plans PDF et la Forge." data-i18n="projectsPage.meta.description" data-i18n-attr="content" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
@@ -69,206 +69,8 @@
           <span class="section-label__rule" aria-hidden="true"></span>
           <h1 class="display section__banner" data-i18n="projectsPage.banner">Projets</h1>
           <p class="section__note">
-            <span class="tape-note" data-i18n="projectsPage.note">Six projets détaillés — contexte, problème, ce que j'ai construit, stack et impacts — puis les autres dépôts de mon GitHub.</span>
+            <span class="tape-note" data-i18n="projectsPage.note">Six projets détaillés — contexte, problème, ce que j'ai construit, stack et résultats — puis mes autres dépôts GitHub.</span>
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ LA FORGE ============ -->
-    <section id="forge" class="detail work--blue">
-      <div class="container container--wide">
-        <div class="work__tab-row">
-          <span class="work__tab">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-            <span data-i18n="projects.forge.tab">Projet 01</span>
-          </span>
-        </div>
-
-        <div class="detail__panel">
-          <div class="detail__top">
-            <div>
-              <span class="work__date" data-i18n="projectsPage.forge.eyebrow">Plateforme interne · Zuri Solutions · Python · Claude Code</span>
-              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.forge.title">La Forge</h2>
-            </div>
-            <span class="detail__note" data-i18n="projectsPage.forge.note">Outil interne Zuri — code non public</span>
-          </div>
-
-          <p class="detail__why" data-i18n="projectsPage.forge.why">Le projet qui montre le mieux ma façon de travailler : faire de l'IA générative un processus d'ingénierie mesurable, où rien n'est « fini » tant qu'un test exécutable ne l'a pas prouvé.</p>
-
-          <div class="detail__grid">
-            <div class="detail__blocks">
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
-                <p data-i18n="projectsPage.forge.context">Chez Zuri Solutions, nous livrons du logiciel sur mesure et des briques d'IA générative pour des PME. Pour tenir des délais courts sans sacrifier la fiabilité, j'ai construit la Forge : l'usine logicielle qui pilote la création d'un projet client, du cadrage jusqu'à la mise en production.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
-                <p data-i18n="projectsPage.forge.problem">Un agent IA qui code seul déclare « fini » trop vite, casse ce qui marchait déjà, invente des champs d'API et peut toucher à des données réelles. Et une réponse de LLM n'est pas déterministe : sans mesure, on ne voit pas qu'elle se dégrade d'une version du prompt ou du modèle à l'autre.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
-                <p data-i18n="projectsPage.forge.built">Un orchestrateur et 5 agents spécialisés (produit, design, build, vérification, revue) qui avancent par contrats YAML : chaque tâche déclare ses entrées, une sortie attendue mesurable et une commande de vérification. Seul le vérificateur dit si c'est fait : il rejoue tous les contrats à chaque passage et signale toute régression. Les tests sont écrits par l'agent de vérification puis verrouillés avant que l'agent build ne code. Pour l'IA, les contrats embarquent un jeu d'évaluation versionné et des seuils issus du brief (exactitude, taux d'hallucination, latence p95, coût par requête) : c'est l'algorithme de non-régression des réponses, qui bloque une livraison dès qu'un score passe sous son seuil. Autour : 8 phases avec portes automatiques et 4 validations humaines, criticité C1/C2/C3, budget de tentatives avec escalade vers un modèle plus fort, coffre à secrets et proxy d'API en lecture seule, anonymisation obligatoire des données de test, hooks de garde-fous, tableau de bord temps réel et notifications. Déployée sur une VM (systemd, Tailscale) avec retour arrière versionné.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
-                <div class="detail__stack">
-                  <span class="tag">Python</span><span class="tag">Claude Code</span><span class="tag" data-i18n="projectsPage.forge.agentsTag">Orchestration multi-agents</span><span class="tag" data-i18n="projectsPage.forge.evalTag">Évaluation LLM</span><span class="tag">YAML</span><span class="tag">systemd</span><span class="tag" data-i18n="projectsPage.forge.hooksTag">Hooks &amp; garde-fous</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="detail__stats">
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.forge.stat1Value">5 agents</span>
-                <span class="stat__label" data-i18n="projectsPage.forge.stat1Label">spécialisés, coordonnés par un orchestrateur</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.forge.stat2Value">8 phases</span>
-                <span class="stat__label" data-i18n="projectsPage.forge.stat2Label">portes automatiques et 4 validations humaines</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.forge.stat3Value">100 % verts</span>
-                <span class="stat__label" data-i18n="projectsPage.forge.stat3Label">contrats exigés avant merge, push ou mise en prod</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.forge.stat4Value">4 métriques IA</span>
-                <span class="stat__label" data-i18n="projectsPage.forge.stat4Label">exactitude, hallucination, latence p95, coût / requête</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ FROG HUB &AMP; CLUB FROG ============ -->
-    <section id="froghub" class="detail work--cyan">
-      <div class="container container--wide">
-        <div class="work__tab-row">
-          <span class="work__tab">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-            <span data-i18n="projects.froghub.tab">Projet 02</span>
-          </span>
-        </div>
-
-        <div class="detail__panel">
-          <div class="detail__top">
-            <div>
-              <span class="work__date" data-i18n="projectsPage.froghub.eyebrow">Hub de données &amp; IA · Zuri Solutions · Node.js · Claude API</span>
-              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.froghub.title">Frog Hub &amp; Club Frog</h2>
-            </div>
-            <span class="detail__note" data-i18n="projectsPage.froghub.note">Projet client — code non public</span>
-          </div>
-
-          <p class="detail__why" data-i18n="projectsPage.froghub.why">Un vrai client, de l'audit au produit : cartographier les processus d'un groupe de pubs, puis construire le hub, les agents et le copilote qui suppriment le travail manuel identifié.</p>
-
-          <div class="detail__grid">
-            <div class="detail__blocks">
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
-                <p data-i18n="projectsPage.froghub.context">Frog Pubs exploite 8 pubs à Paris, Bordeaux et Toulouse, plus un siège et une brasserie. Après un audit et une cartographie complète de leurs processus, Zuri construit leur hub de données et Club Frog, un programme de fidélité bâti sur le hub.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
-                <p data-i18n="projectsPage.froghub.problem">Plus de dix outils métier (caisse, plannings, achats, réservations, paiements, comptabilité) qui ne se parlent pas : ressaisies à chaque clôture de service, rapprochements faits à la main, chiffres différents d'un outil à l'autre, et 38 points de douleur relevés pendant l'audit.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
-                <p data-i18n="projectsPage.froghub.built">Un prototype complet, puis le vrai hub branché sur les API. Le hub unifie les sources par adaptateurs (même schéma interne, que la donnée arrive par API ou par export) et restitue les bons chiffres à chaque rôle : équipes de pub, direction, opérations, marketing, comptabilité, IT. 7 agents IA ont chacun une mission tirée de l'audit, et 20 automatisations (« quand → quoi → où ») envoient la bonne donnée au bon outil, en automatique ou après validation. Frog Copilot, construit sur Claude avec tool use, répond avec les chiffres en direct du hub et les passages de la documentation interne, retrouvés par un moteur de recherche BM25 (RAG). Côté production : lecture seule par défaut, idempotence, files d'attente et backoff sur les limites d'API, aucune donnée personnelle dans les logs, et l'encaissement ne dépend jamais du hub.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
-                <div class="detail__stack">
-                  <span class="tag">Node.js</span><span class="tag">Claude API</span><span class="tag" data-i18n="projectsPage.froghub.toolTag">Tool use</span><span class="tag">RAG / BM25</span><span class="tag">Webhooks</span><span class="tag" data-i18n="projectsPage.froghub.apiTag">Intégrations API</span><span class="tag" data-i18n="projectsPage.froghub.agentsTag">Agents IA</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="detail__stats">
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.froghub.stat1Value">8 pubs · 10+ outils</span>
-                <span class="stat__label" data-i18n="projectsPage.froghub.stat1Label">reliés à un hub de données unique</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.froghub.stat2Value">7 agents · 20 automatisations</span>
-                <span class="stat__label" data-i18n="projectsPage.froghub.stat2Label">chacun rattaché à un problème de l'audit</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.froghub.stat3Value">38 points de douleur</span>
-                <span class="stat__label" data-i18n="projectsPage.froghub.stat3Label">suivis avec statut, méthode et décision</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.froghub.stat4Value">Copilote sourcé</span>
-                <span class="stat__label" data-i18n="projectsPage.froghub.stat4Label">chiffres en direct + documentation citée</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PLANS → SURFACES ============ -->
-    <section id="surfaces" class="detail work--mint">
-      <div class="container container--wide">
-        <div class="work__tab-row">
-          <span class="work__tab">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-            <span data-i18n="projects.surfaces.tab">Projet 03</span>
-          </span>
-        </div>
-
-        <div class="detail__panel">
-          <div class="detail__top">
-            <div>
-              <span class="work__date" data-i18n="projectsPage.surfaces.eyebrow">Extraction de documents · Zuri Solutions · FastAPI · React</span>
-              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.surfaces.title">Plans → Surfaces</h2>
-            </div>
-            <span class="detail__note" data-i18n="projectsPage.surfaces.note">Projet client — code non public</span>
-          </div>
-
-          <p class="detail__why" data-i18n="projectsPage.surfaces.why">De l'extraction brute à la donnée fiable : le projet où la règle métier compte autant que le parsing, avec un score de confiance qui dit au consultant où regarder.</p>
-
-          <div class="detail__grid">
-            <div class="detail__blocks">
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
-                <p data-i18n="projectsPage.surfaces.context">Pour Confier &amp; Associés, cabinet de conseil spécialisé dans la revalorisation de la taxe foncière des locaux professionnels. Chaque dossier est un lot de plans de métrage PDF dont les surfaces, pièce par pièce, étaient recopiées à la main.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
-                <p data-i18n="projectsPage.surfaces.problem">À l'échelle de centaines de plans, la ressaisie ne tient pas. Et la règle métier est piégeuse : le groupe d'une pièce (partie principale, dégagement, autre) dépend du type d'activité du bien. Les sanitaires sont un dégagement dans un atelier, mais une partie principale dans un hôtel.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
-                <p data-i18n="projectsPage.surfaces.built">Une plateforme locale, où les plans ne quittent jamais le poste. Elle extrait les couples pièce / surface du texte des PDF avec PyMuPDF, détecte l'étage, attribue à chaque ligne un score de confiance de 0 à 100 avec ses raisons (surface aberrante, libellé douteux, association suspecte), normalise les libellés vers les 74 dénominations du client, puis résout le groupe via une matrice 74 dénominations × 16 types d'activité, en trois niveaux de priorité. Le consultant corrige, renomme ou écarte une ligne dans l'interface ; chaque correction est rattachée à l'empreinte du PDF, et l'export Excel sort au format attendu par le cabinet.</p>
-              </div>
-              <div class="detail__block">
-                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
-                <div class="detail__stack">
-                  <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PyMuPDF</span><span class="tag">pandas</span><span class="tag">React</span><span class="tag">Docker</span><span class="tag" data-i18n="projectsPage.surfaces.excelTag">Export Excel</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="detail__stats">
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.surfaces.stat1Value">74 × 16</span>
-                <span class="stat__label" data-i18n="projectsPage.surfaces.stat1Label">matrice dénominations × types d'activité</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.surfaces.stat2Value">Score 0–100</span>
-                <span class="stat__label" data-i18n="projectsPage.surfaces.stat2Label">de confiance par ligne, raisons affichées</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.surfaces.stat3Value">100 % local</span>
-                <span class="stat__label" data-i18n="projectsPage.surfaces.stat3Label">aucun plan ne quitte le poste</span>
-              </div>
-              <div class="stat">
-                <span class="stat__value" data-i18n="projectsPage.surfaces.stat4Value">Traitement par lot</span>
-                <span class="stat__label" data-i18n="projectsPage.surfaces.stat4Label">un PDF illisible n’interrompt jamais le lot</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -279,7 +81,7 @@
         <div class="work__tab-row">
           <span class="work__tab">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-            <span data-i18n="projects.dura.tab">Projet 04</span>
+            <span data-i18n="projects.dura.tab">Projet 01</span>
           </span>
         </div>
 
@@ -304,7 +106,7 @@
               </div>
               <div class="detail__block">
                 <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
-                <p data-i18n="projectsPage.dura.built">DURA, une plateforme qui industrialise toute la chaîne : ingestion automatisée des séries temporelles, traitement des profils de mission, calculs de fatigue et production des KPIs. J'ai conçu les pipelines et les schémas PostgreSQL (15+ tables) qui structurent ~10 Go de données par mois, ainsi que 10+ modules de calcul réutilisables qui garantissent que chaque équipe applique la même méthode. Le tout est exposé via des APIs REST, conteneurisé avec Docker et passe à l'échelle sur Databricks, avec une traçabilité complète du signal brut jusqu'aux sorties.</p>
+                <p data-i18n="projectsPage.dura.built">DURA, une plateforme qui industrialise toute la chaîne : ingestion automatisée des séries temporelles, traitement des profils de mission, calculs de fatigue et production des KPIs. J'ai conçu les pipelines et les schémas PostgreSQL (24 tables) qui structurent ~10 Go de données par mois, ainsi que 10+ modules de calcul réutilisables qui garantissent que chaque équipe applique la même méthode. Le tout est exposé via des APIs REST, conteneurisé avec Docker et passe à l'échelle sur Databricks, avec une traçabilité complète du signal brut jusqu'aux sorties.</p>
               </div>
               <div class="detail__block">
                 <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
@@ -320,7 +122,7 @@
                 <span class="stat__label" data-i18n="projectsPage.dura.stat1Label">cycle d'analyse, résultats standardisés entre équipes</span>
               </div>
               <div class="stat">
-                <span class="stat__value">15+ tables</span>
+                <span class="stat__value">24 tables</span>
                 <span class="stat__label" data-i18n="projectsPage.dura.stat2Label">schémas PostgreSQL</span>
               </div>
               <div class="stat">
@@ -343,7 +145,7 @@
         <div class="work__tab-row">
           <span class="work__tab">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-            <span data-i18n="projects.ppm.tab">Projet 05</span>
+            <span data-i18n="projects.ppm.tab">Projet 02</span>
           </span>
         </div>
 
@@ -403,7 +205,7 @@
         <div class="work__tab-row">
           <span class="work__tab">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
-            <span data-i18n="projects.pneumonia.tab">Projet 06</span>
+            <span data-i18n="projects.pneumonia.tab">Projet 03</span>
           </span>
         </div>
 
@@ -419,7 +221,7 @@
             </a>
           </div>
 
-          <p class="detail__why" data-i18n="projectsPage.pneumonia.why">Projet personnel sélectionné sur mon GitHub : celui qui montre le mieux une expertise deep learning / computer vision complète — du prétraitement d'images à l'évaluation du modèle — dans un domaine différent, ce qui complète le panorama IA générative (Forge, Frog Hub), extraction de documents (Surfaces) et industrie (DURA, PPM).</p>
+          <p class="detail__why" data-i18n="projectsPage.pneumonia.why">Projet personnel choisi pour montrer une chaîne deep learning complète, du prétraitement d'images à l'évaluation du modèle.</p>
 
           <div class="detail__grid">
             <div class="detail__blocks">
@@ -455,6 +257,190 @@
               <div class="stat">
                 <span class="stat__value" data-i18n="projectsPage.pneumonia.stat3Value">Classification binaire</span>
                 <span class="stat__label" data-i18n="projectsPage.pneumonia.stat3Label">seuil de décision à 0.5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FROGHUB ============ -->
+    <section id="froghub" class="detail work--cyan">
+      <div class="container container--wide">
+        <div class="work__tab-row">
+          <span class="work__tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span data-i18n="projects.froghub.tab">Projet 04</span>
+          </span>
+        </div>
+
+        <div class="detail__panel">
+          <div class="detail__top">
+            <div>
+              <span class="work__date" data-i18n="projectsPage.froghub.eyebrow">Data engineering · Zuri Solutions · Node.js</span>
+              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.froghub.title">Frog Hub</h2>
+            </div>
+            <span class="detail__note" data-i18n="projectsPage.froghub.note">Projet client — code non public</span>
+          </div>
+
+          <div class="detail__grid">
+            <div class="detail__blocks">
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
+                <p data-i18n="projectsPage.froghub.context">Frog Pubs exploite 8 pubs à Paris, Bordeaux et Toulouse. Après un audit de leurs processus, Zuri construit leur hub de données.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
+                <p data-i18n="projectsPage.froghub.problem">Plus de dix outils (caisse, plannings, achats, réservations, compta) qui ne se parlent pas : ressaisies, rapprochements manuels, chiffres différents d'un outil à l'autre.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
+                <p data-i18n="projectsPage.froghub.built">Un hub qui unifie chaque source par un adaptateur (API ou export, même schéma interne), calcule les KPI de chaque rôle et renvoie les données vers les outils métier. Ingestion fiable : idempotence, files d'attente, backoff sur les limites d'API, aucune donnée personnelle dans les logs. Un copilote IA répond avec les chiffres du hub (RAG).</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
+                <div class="detail__stack">
+                  <span class="tag">Node.js</span><span class="tag" data-i18n="projectsPage.froghub.tagIntegration">Intégration de données</span><span class="tag" data-i18n="projectsPage.froghub.tagApi">API &amp; webhooks</span><span class="tag">KPI</span><span class="tag">RAG</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail__stats">
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.froghub.stat1Value">10+ sources</span>
+                <span class="stat__label" data-i18n="projectsPage.froghub.stat1Label">unifiées dans un même schéma</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.froghub.stat2Value">8 pubs</span>
+                <span class="stat__label" data-i18n="projectsPage.froghub.stat2Label">KPI par rôle et par établissement</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.froghub.stat3Value">20 automatisations</span>
+                <span class="stat__label" data-i18n="projectsPage.froghub.stat3Label">données renvoyées vers les outils métier</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SURFACES ============ -->
+    <section id="surfaces" class="detail work--mint">
+      <div class="container container--wide">
+        <div class="work__tab-row">
+          <span class="work__tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span data-i18n="projects.surfaces.tab">Projet 05</span>
+          </span>
+        </div>
+
+        <div class="detail__panel">
+          <div class="detail__top">
+            <div>
+              <span class="work__date" data-i18n="projectsPage.surfaces.eyebrow">Extraction &amp; qualité de données · Zuri Solutions · Python</span>
+              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.surfaces.title">Plans → Surfaces</h2>
+            </div>
+            <span class="detail__note" data-i18n="projectsPage.surfaces.note">Projet client — code non public</span>
+          </div>
+
+          <div class="detail__grid">
+            <div class="detail__blocks">
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
+                <p data-i18n="projectsPage.surfaces.context">Pour Confier &amp; Associés, cabinet de conseil en taxe foncière : les surfaces de centaines de plans PDF étaient recopiées à la main.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
+                <p data-i18n="projectsPage.surfaces.problem">Le volume rend la ressaisie intenable, et le classement d'une pièce dépend du type d'activité du bien : des sanitaires ne comptent pas pareil dans un atelier et dans un hôtel.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
+                <p data-i18n="projectsPage.surfaces.built">Extraction des couples pièce / surface avec PyMuPDF, score de confiance 0–100 par ligne (valeurs aberrantes, libellés douteux), normalisation vers 74 dénominations et classification par une matrice 74 × 16 types d'activité. Validation dans une interface React, export Excel au format client, tout en local.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
+                <div class="detail__stack">
+                  <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PyMuPDF</span><span class="tag">pandas</span><span class="tag">React</span><span class="tag" data-i18n="projectsPage.surfaces.tagExcel">Export Excel</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail__stats">
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.surfaces.stat1Value">74 × 16</span>
+                <span class="stat__label" data-i18n="projectsPage.surfaces.stat1Label">matrice dénominations × types d'activité</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.surfaces.stat2Value">Score 0–100</span>
+                <span class="stat__label" data-i18n="projectsPage.surfaces.stat2Label">de confiance par ligne</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.surfaces.stat3Value">100 % local</span>
+                <span class="stat__label" data-i18n="projectsPage.surfaces.stat3Label">aucun plan ne quitte le poste</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORGE ============ -->
+    <section id="forge" class="detail work--blue">
+      <div class="container container--wide">
+        <div class="work__tab-row">
+          <span class="work__tab">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            <span data-i18n="projects.forge.tab">Projet 06</span>
+          </span>
+        </div>
+
+        <div class="detail__panel">
+          <div class="detail__top">
+            <div>
+              <span class="work__date" data-i18n="projectsPage.forge.eyebrow">Plateforme interne · Zuri Solutions · Python · LLM</span>
+              <h2 class="detail__title" style="margin-top: 1rem;" data-i18n="projectsPage.forge.title">La Forge</h2>
+            </div>
+            <span class="detail__note" data-i18n="projectsPage.forge.note">Outil interne Zuri — code non public</span>
+          </div>
+
+          <div class="detail__grid">
+            <div class="detail__blocks">
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.context">Contexte</h3>
+                <p data-i18n="projectsPage.forge.context">L'outil interne avec lequel Zuri livre ses projets clients, dont Frog Hub et Plans → Surfaces : il pilote chaque projet du cadrage à la mise en production.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.problem">Problème</h3>
+                <p data-i18n="projectsPage.forge.problem">Un agent IA qui code seul déclare « fini » trop vite et casse ce qui marchait déjà. Et la sortie d'un modèle n'est pas déterministe : sans mesure, on ne voit pas qu'elle se dégrade d'une version du prompt ou du modèle à l'autre.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.built">Ce que j'ai construit</h3>
+                <p data-i18n="projectsPage.forge.built">Un orchestrateur et 5 agents IA spécialisés (produit, design, build, vérification, revue) qui avancent en 8 phases. Chaque tâche est un contrat YAML : entrées, sortie attendue mesurable, commande de vérification. Un vérificateur indépendant rejoue tous les contrats à chaque passage et détecte les régressions ; les tests sont écrits et verrouillés avant le code. Pour l'IA, chaque contrat embarque un jeu d'évaluation versionné et des seuils (exactitude, hallucination, latence p95, coût par requête). Côté ops : hooks qui bloquent merge et push tant qu'un contrat est rouge, coffre à secrets, proxy d'API en lecture seule, tableau de bord temps réel, VM Linux (systemd, Tailscale) avec retour arrière.</p>
+              </div>
+              <div class="detail__block">
+                <h3 data-i18n="projectsPage.labels.stack">Stack technique</h3>
+                <div class="detail__stack">
+                  <span class="tag">Python</span><span class="tag" data-i18n="projectsPage.forge.tagEval">Évaluation de modèles</span><span class="tag" data-i18n="projectsPage.forge.tagReg">Tests de non-régression</span><span class="tag">LLM</span><span class="tag">YAML</span><span class="tag">systemd</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail__stats">
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.forge.stat1Value">5 agents · 8 phases</span>
+                <span class="stat__label" data-i18n="projectsPage.forge.stat1Label">orchestrés, avec 4 validations humaines</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.forge.stat2Value">4 métriques IA</span>
+                <span class="stat__label" data-i18n="projectsPage.forge.stat2Label">exactitude, hallucination, latence p95, coût</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.forge.stat3Value">0 merge</span>
+                <span class="stat__label" data-i18n="projectsPage.forge.stat3Label">tant qu'un contrat est rouge</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-i18n="projectsPage.forge.stat4Value">5 tentatives</span>
+                <span class="stat__label" data-i18n="projectsPage.forge.stat4Label">puis escalade vers un humain</span>
               </div>
             </div>
           </div>

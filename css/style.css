@@ -635,6 +635,15 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   border: 2px solid var(--ink);
 }
 .exp__point-title { font-weight: 600; margin-bottom: 0.25rem; }
+.exp__point-roles {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--orange, #ff6a35);
+  margin-bottom: 0.4rem;
+}
 .exp__point-text { font-size: 0.92rem; }
 .exp__links { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 1.5rem; }
 @media (max-width: 700px) { .exp__point { grid-template-columns: 1fr; } }
