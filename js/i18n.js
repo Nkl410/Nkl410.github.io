@@ -82,7 +82,7 @@
         "banner": "Expériences",
         "emotors": {
           "role": "Data Scientist / Data Engineer",
-          "meta": "Alternance · Paris · septembre 2025 → 2028",
+          "meta": "Alternance · Paris · septembre 2025 → 2027",
           "p1": {
             "title": "DURA — plateforme durabilité",
             "roles": "Data Engineer · DevOps · Chef de projet",
@@ -443,7 +443,7 @@
         "banner": "Experience",
         "emotors": {
           "role": "Data Scientist / Data Engineer",
-          "meta": "Apprenticeship · Paris · September 2025 → 2028",
+          "meta": "Apprenticeship · Paris · September 2025 → 2027",
           "p1": {
             "title": "DURA — durability platform",
             "roles": "Data Engineer · DevOps · Project lead",
