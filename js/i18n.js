@@ -44,7 +44,7 @@
       "about": {
         "label": "à propos de moi !",
         "banner": "À propos",
-        "statement": "Data Scientist / Data Engineer, ingénieur Big Data & IA à l'ECE Paris. En alternance chez Stellantis et fondateur de Zuri Solutions : pipelines de données, modèles ML / deep learning et IA générative, livrés jusqu'en production.",
+        "statement": "Data Scientist / Data Engineer et CTO de Zuri Solutions. Je conçois des plateformes data et des modèles de machine learning et de deep learning, puis je les mets en production.",
         "lookingForTitle": "Ce que je recherche",
         "lookingFor1": "Une alternance pour l'année 2027-2028 en Data Science / Data Engineering / IA",
         "lookingFor2": "Des missions concrètes : pipelines, applications data, automatisation, ML",
@@ -83,91 +83,108 @@
         "emotors": {
           "role": "Data Scientist / Data Engineer",
           "meta": "Alternance · Paris · septembre 2025 → 2027",
-          "p1": {
-            "title": "DURA — plateforme durabilité",
-            "roles": "Data Engineer · DevOps · Chef de projet",
-            "text": "Back-end Flask et base PostgreSQL de 24 tables : import des profils de mission (.mat, CSV, Parquet), 10+ modules de calcul réutilisables, APIs REST, Docker et Databricks. Cadrage et recette avec les équipes durabilité.",
-            "statValue": "~10 Go/mois",
-            "statLabel": "de séries temporelles traitées"
-          },
-          "p2": {
-            "title": "Analyses de fatigue moteur",
-            "roles": "Data Scientist",
-            "text": "Comptage rainflow, matrices de cycles, lois d'endommagement de Basquin, analyses contrainte-résistance et enveloppes de mission, automatisés de bout en bout.",
-            "statValue": "1 mois → 1 semaine",
-            "statLabel": "cycle d'analyse durabilité"
-          },
-          "p3": {
-            "title": "Predictive Quality — PPM",
-            "roles": "ML Engineer · Data Scientist",
-            "text": "Modèle de Weibull ajusté par mode de défaillance sur les cohortes de production mensuelles, projection du PPM à 3 mois en service, filtre de maturité, rapports PowerPoint générés automatiquement.",
-            "statValue": "10 / 10",
-            "statLabel": "backtest sur le Top 10 des défaillances"
-          },
           "moreDura": "Voir DURA",
-          "morePpm": "Voir Predictive Quality"
-        },
-        "zuri": {
-          "role": "Fondateur",
-          "meta": "Data & IA sur mesure pour PME · Paris · 2026 → présent",
+          "morePpm": "Voir Predictive Quality",
           "p1": {
-            "title": "La Forge — notre plateforme de production",
-            "roles": "ML Engineer · DevOps · Chef de projet",
-            "text": "L'outil avec lequel Zuri livre tous ses projets : un orchestrateur et 5 agents IA en 8 phases, chaque tâche est un contrat vérifié par un script indépendant, les modèles IA sont évalués à chaque build, et aucun merge ne passe tant qu'un contrat est rouge.",
-            "statValue": "5 agents · 8 phases",
-            "statLabel": "4 validations client, du brief à la prod"
+            "title": "Data Engineer",
+            "roles": "Python · PostgreSQL · Flask · Parquet",
+            "text": "Création de A à Z de la plateforme data : ingestion, base de données, APIs et interface.",
+            "statValue": "~10 Go/mois",
+            "statLabel": "de données traitées"
           },
           "p2": {
-            "title": "Frog Hub — Frog Pubs, 8 pubs",
-            "roles": "Data Engineer · LLM Engineer · Chef de projet",
-            "text": "Audit de 38 points de douleur, cahier des charges, puis hub de données : caisse, plannings, achats, réservations et compta unifiés dans un même schéma, KPI par rôle, 7 agents, 20 automatisations et un copilote Claude sourcé (RAG).",
-            "statValue": "10+ sources",
-            "statLabel": "unifiées dans un même hub"
+            "title": "DevOps",
+            "roles": "Azure · CI/CD · Docker · Databricks",
+            "text": "Mise en production sur Azure : pipelines de déploiement, conteneurisation et environnements reproductibles."
           },
           "p3": {
-            "title": "Plans → Surfaces — Confier & Associés",
-            "roles": "Data Scientist · Data Engineer",
-            "text": "Extraction des surfaces de centaines de plans PDF (PyMuPDF), score de confiance 0–100 par ligne, classification sur une matrice 74 dénominations × 16 types d'activité, export Excel, 100 % local.",
-            "statValue": "74 × 16",
-            "statLabel": "matrice de classification"
+            "title": "Deep Learning Engineer",
+            "roles": "CNN · Computer Vision",
+            "text": "Modèle CNN de détection de défaillances moteur."
           },
           "p4": {
-            "title": "Infrastructure & outils Zuri",
-            "roles": "DevOps",
-            "text": "VM Linux (systemd, Tailscale), CRM auto-hébergé (Docker Compose, PostgreSQL, Redis, Caddy en HTTPS), coffre à secrets, proxy d'API en lecture seule, site bilingue FR / EN.",
-            "statValue": "1 commande",
-            "statLabel": "pour déployer ou revenir en arrière"
+            "title": "ML Engineer",
+            "roles": "Python · SciPy · Modèles prédictifs",
+            "text": "Prédiction des pièces défaillantes pour anticiper les dérives qualité.",
+            "statValue": "10 / 10",
+            "statLabel": "en backtest"
           },
+          "p5": {
+            "title": "Data Scientist",
+            "roles": "Python · NumPy · Traitement d'image",
+            "text": "Traitement d'image pixel par pixel, reconstitution des calculs en Python et optimisation de leurs performances.",
+            "statValue": "1 mois → 1 semaine",
+            "statLabel": "cycle d'analyse"
+          }
+        },
+        "zuri": {
+          "role": "CTO",
+          "meta": "Data & IA sur mesure pour PME · Paris · 2026 → présent",
           "moreForge": "Voir la Forge",
           "moreFrog": "Voir Frog Hub",
-          "moreSurfaces": "Voir l'extraction de surfaces"
+          "moreSurfaces": "Voir l'extraction de surfaces",
+          "p1": {
+            "title": "CTO",
+            "roles": "Architecture · Agents IA · Gestion de projet",
+            "text": "Direction technique : architecture, choix des stacks et pilotage des projets clients jusqu'à la mise en production. Conception de la Forge, notre plateforme de production logicielle multi-agents.",
+            "statValue": "5 agents · 8 phases",
+            "statLabel": "plateforme la Forge"
+          },
+          "p2": {
+            "title": "Data Engineer",
+            "roles": "Python · Node.js · API & webhooks",
+            "text": "Hubs de données qui unifient les outils des clients dans un même schéma, avec KPI et automatisations.",
+            "statValue": "10+ sources",
+            "statLabel": "unifiées"
+          },
+          "p3": {
+            "title": "ML / LLM Engineer",
+            "roles": "LLM · RAG · Évaluation de modèles",
+            "text": "Copilotes IA sur les données et la documentation des clients, évaluation des modèles et tests de non-régression à chaque build.",
+            "statValue": "4 métriques",
+            "statLabel": "suivies à chaque build"
+          },
+          "p4": {
+            "title": "Data Scientist",
+            "roles": "Python · PyMuPDF · pandas",
+            "text": "Extraction et fiabilisation de données à partir de documents, score de confiance et classification automatique.",
+            "statValue": "Score 0–100",
+            "statLabel": "de confiance par ligne"
+          },
+          "p5": {
+            "title": "DevOps",
+            "roles": "Linux · Docker · systemd · Caddy",
+            "text": "Infrastructure Linux, conteneurs, déploiements versionnés avec retour arrière et gestion des secrets.",
+            "statValue": "1 commande",
+            "statLabel": "pour déployer ou revenir en arrière"
+          }
         },
         "circularplace": {
           "role": "Assistant Product Manager",
           "meta": "Alternance · Paris · août 2024 → août 2025",
           "p1": {
-            "title": "Automatisation & QA",
-            "text": "5+ solutions d'automatisation pour la gestion de données, workflows QA automatisés, 10+ fonctionnalités livrées en Agile.",
-            "roles": "Data Engineer · QA"
+            "title": "Data Engineer",
+            "text": "5+ solutions d'automatisation des données et workflows QA automatisés.",
+            "roles": "Python · Automatisation · QA"
           },
           "p2": {
-            "title": "Modèles IA produit",
-            "text": "CNN de classification produit, régression de prédiction de prix, base et calculateur d'impact CO₂.",
+            "title": "ML / DL Engineer",
+            "text": "CNN de classification produit et modèle de régression pour la prédiction de prix.",
             "statLabel": "d'erreur sur la prédiction de prix",
-            "roles": "ML Engineer · Data Scientist"
+            "roles": "CNN · Régression"
           },
           "p3": {
-            "title": "Extraction de données",
-            "text": "Points de données extraits via Python, APIs et BeautifulSoup pour l'analyse d'actifs.",
+            "title": "Data Scientist",
+            "text": "Collecte et analyse de données via Python, APIs et scraping.",
             "statLabel": "points de données",
-            "roles": "Data Engineer"
+            "roles": "Python · APIs · Scraping"
           },
           "p4": {
-            "title": "Plateforme B2B",
-            "text": "Lancement d'une plateforme B2B, gestion d'inventaire sur plusieurs étages, coordination multi-équipes.",
-            "statValue": "20+ étages · 3+ équipes",
-            "statLabel": "coordonnés",
-            "roles": "Chef de projet"
+            "title": "Chef de projet",
+            "text": "Lancement d'une plateforme B2B en Agile, 10+ fonctionnalités livrées.",
+            "statValue": "3+ équipes",
+            "statLabel": "coordonnées",
+            "roles": "Agile · Product"
           }
         }
       },
@@ -405,7 +422,7 @@
       "about": {
         "label": "about me!",
         "banner": "About",
-        "statement": "Data Scientist / Data Engineer, Big Data & AI engineering student at ECE Paris. Apprentice at Stellantis and founder of Zuri Solutions: data pipelines, ML / deep learning models and generative AI, shipped all the way to production.",
+        "statement": "Data Scientist / Data Engineer and CTO of Zuri Solutions. I design data platforms and machine learning and deep learning models, then put them into production.",
         "lookingForTitle": "What I'm looking for",
         "lookingFor1": "An apprenticeship for the 2027-2028 year in Data Science / Data Engineering / AI",
         "lookingFor2": "Hands-on missions: pipelines, data applications, automation, ML",
@@ -444,91 +461,108 @@
         "emotors": {
           "role": "Data Scientist / Data Engineer",
           "meta": "Apprenticeship · Paris · September 2025 → 2027",
-          "p1": {
-            "title": "DURA — durability platform",
-            "roles": "Data Engineer · DevOps · Project lead",
-            "text": "Flask back end and a 24-table PostgreSQL database: mission-profile import (.mat, CSV, Parquet), 10+ reusable computation modules, REST APIs, Docker and Databricks. Scoping and acceptance with the durability teams.",
-            "statValue": "~10 GB/month",
-            "statLabel": "of time series processed"
-          },
-          "p2": {
-            "title": "Engine fatigue analyses",
-            "roles": "Data Scientist",
-            "text": "Rainflow counting, cycle matrices, Basquin damage laws, stress-strength analyses and mission envelopes, automated end to end.",
-            "statValue": "1 month → 1 week",
-            "statLabel": "durability analysis cycle"
-          },
-          "p3": {
-            "title": "Predictive Quality — PPM",
-            "roles": "ML Engineer · Data Scientist",
-            "text": "Weibull model fitted per failure mode on monthly production cohorts, 3-months-in-service PPM projection, maturity filter, automatically generated PowerPoint reports.",
-            "statValue": "10 / 10",
-            "statLabel": "backtest on the Top 10 failures"
-          },
           "moreDura": "See DURA",
-          "morePpm": "See Predictive Quality"
-        },
-        "zuri": {
-          "role": "Founder",
-          "meta": "Custom data & AI for SMBs · Paris · 2026 → present",
+          "morePpm": "See Predictive Quality",
           "p1": {
-            "title": "The Forge — our delivery platform",
-            "roles": "ML Engineer · DevOps · Project lead",
-            "text": "The tool Zuri uses to deliver every project: an orchestrator and 5 AI agents across 8 phases, every task is a contract checked by an independent script, AI models are evaluated on every build, and nothing merges while a contract is red.",
-            "statValue": "5 agents · 8 phases",
-            "statLabel": "4 client sign-offs, brief to production"
+            "title": "Data Engineer",
+            "roles": "Python · PostgreSQL · Flask · Parquet",
+            "text": "Built the data platform from scratch: ingestion, database, APIs and interface.",
+            "statValue": "~10 GB/month",
+            "statLabel": "of data processed"
           },
           "p2": {
-            "title": "Frog Hub — Frog Pubs, 8 pubs",
-            "roles": "Data Engineer · LLM Engineer · Project lead",
-            "text": "Audit of 38 pain points, specifications, then a data hub: tills, rotas, purchasing, bookings and accounting unified into one schema, KPIs per role, 7 agents, 20 automations and a sourced Claude copilot (RAG).",
-            "statValue": "10+ sources",
-            "statLabel": "unified into one hub"
+            "title": "DevOps",
+            "roles": "Azure · CI/CD · Docker · Databricks",
+            "text": "Production deployment on Azure: deployment pipelines, containerisation and reproducible environments."
           },
           "p3": {
-            "title": "Plans → Floor areas — Confier & Associés",
-            "roles": "Data Scientist · Data Engineer",
-            "text": "Floor-area extraction from hundreds of PDF plans (PyMuPDF), 0–100 confidence score per line, classification on a 74 room types × 16 activity types matrix, Excel export, 100% local.",
-            "statValue": "74 × 16",
-            "statLabel": "classification matrix"
+            "title": "Deep Learning Engineer",
+            "roles": "CNN · Computer Vision",
+            "text": "CNN model detecting engine failures."
           },
           "p4": {
-            "title": "Zuri infrastructure & tooling",
-            "roles": "DevOps",
-            "text": "Linux VM (systemd, Tailscale), self-hosted CRM (Docker Compose, PostgreSQL, Redis, Caddy over HTTPS), secrets vault, read-only API proxy, bilingual FR / EN website.",
-            "statValue": "1 command",
-            "statLabel": "to deploy or roll back"
+            "title": "ML Engineer",
+            "roles": "Python · SciPy · Predictive models",
+            "text": "Predicting defective parts to anticipate quality drifts.",
+            "statValue": "10 / 10",
+            "statLabel": "in backtest"
           },
+          "p5": {
+            "title": "Data Scientist",
+            "roles": "Python · NumPy · Image processing",
+            "text": "Pixel-level image processing, re-implementation of calculations in Python and performance optimisation.",
+            "statValue": "1 month → 1 week",
+            "statLabel": "analysis cycle"
+          }
+        },
+        "zuri": {
+          "role": "CTO",
+          "meta": "Custom data & AI for SMBs · Paris · 2026 → present",
           "moreForge": "See the Forge",
           "moreFrog": "See Frog Hub",
-          "moreSurfaces": "See floor-area extraction"
+          "moreSurfaces": "See floor-area extraction",
+          "p1": {
+            "title": "CTO",
+            "roles": "Architecture · AI agents · Project management",
+            "text": "Technical leadership: architecture, stack choices and client projects driven all the way to production. Designed the Forge, our multi-agent software delivery platform.",
+            "statValue": "5 agents · 8 phases",
+            "statLabel": "the Forge platform"
+          },
+          "p2": {
+            "title": "Data Engineer",
+            "roles": "Python · Node.js · APIs & webhooks",
+            "text": "Data hubs that bring client tools into a single schema, with KPIs and automations.",
+            "statValue": "10+ sources",
+            "statLabel": "unified"
+          },
+          "p3": {
+            "title": "ML / LLM Engineer",
+            "roles": "LLM · RAG · Model evaluation",
+            "text": "AI copilots over client data and documentation, model evaluation and regression tests on every build.",
+            "statValue": "4 metrics",
+            "statLabel": "tracked on every build"
+          },
+          "p4": {
+            "title": "Data Scientist",
+            "roles": "Python · PyMuPDF · pandas",
+            "text": "Data extraction and validation from documents, confidence scoring and automatic classification.",
+            "statValue": "0–100 score",
+            "statLabel": "confidence per line"
+          },
+          "p5": {
+            "title": "DevOps",
+            "roles": "Linux · Docker · systemd · Caddy",
+            "text": "Linux infrastructure, containers, versioned deployments with rollback and secrets management.",
+            "statValue": "1 command",
+            "statLabel": "to deploy or roll back"
+          }
         },
         "circularplace": {
           "role": "Assistant Product Manager",
           "meta": "Apprenticeship · Paris · August 2024 → August 2025",
           "p1": {
-            "title": "Automation & QA",
-            "text": "5+ automation solutions for data management, automated QA workflows, 10+ features delivered in Agile.",
-            "roles": "Data Engineer · QA"
+            "title": "Data Engineer",
+            "text": "5+ data automation solutions and automated QA workflows.",
+            "roles": "Python · Automation · QA"
           },
           "p2": {
-            "title": "Product AI models",
-            "text": "CNN for product classification, price prediction regression model, CO₂ impact database and calculator.",
+            "title": "ML / DL Engineer",
+            "text": "CNN for product classification and a regression model for price prediction.",
             "statLabel": "error on price prediction",
-            "roles": "ML Engineer · Data Scientist"
+            "roles": "CNN · Regression"
           },
           "p3": {
-            "title": "Data extraction",
-            "text": "Data points extracted via Python, APIs and BeautifulSoup for asset analysis.",
+            "title": "Data Scientist",
+            "text": "Data collection and analysis with Python, APIs and scraping.",
             "statLabel": "data points",
-            "roles": "Data Engineer"
+            "roles": "Python · APIs · Scraping"
           },
           "p4": {
-            "title": "B2B platform",
-            "text": "Launched a B2B platform, managed inventory across multiple floors, coordinated several teams.",
-            "statValue": "20+ floors · 3+ teams",
+            "title": "Project lead",
+            "text": "Launched a B2B platform in Agile, 10+ features delivered.",
+            "statValue": "3+ teams",
             "statLabel": "coordinated",
-            "roles": "Project lead"
+            "roles": "Agile · Product"
           }
         }
       },
