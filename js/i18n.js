@@ -31,7 +31,7 @@
         "intro": "je m'appelle",
         "photoAlt": "Photo de Nikola Vucic",
         "photoCaption": "Paris, 2026",
-        "pillRole": "Data Scientist",
+        "pillRole": "Data Enthusiast",
         "pillPlace": "Paris, France",
         "pillInternship": "Alternance 2027 → 2028",
         "noteInternship": "alternance data 2027-2028 — dispo !",
@@ -114,21 +114,24 @@
             "text": "Modèle de deep learning qui détecte automatiquement les défaillances moteur.",
             "items": [
               "Construction et prétraitement du jeu de données",
+              "Analyse et comparaison de plusieurs modèles testés",
               "Conception, entraînement et évaluation d'un réseau convolutif (CNN)"
-            ]
+            ],
+            "statValue": "0,96",
+            "statLabel": "de précision"
           },
           "p4": {
             "title": "ML Engineer",
             "roles": "Python · SciPy · Modèles prédictifs",
             "text": "Modèles qui anticipent les pièces défaillantes avant qu'elles n'apparaissent dans les indicateurs qualité.",
             "items": [
+              "Analyse et comparaison de plusieurs modèles testés",
               "Modélisation statistique de la fiabilité (loi de Weibull) par mode de défaillance",
               "Projection des taux de défaillance sur les productions récentes",
-              "Backtest systématique des prédictions",
-              "Rapports PowerPoint générés automatiquement"
+              "Backtest systématique : 10/10 sur les principaux modes de défaillance"
             ],
-            "statValue": "10 / 10",
-            "statLabel": "en backtest"
+            "statValue": "0,96",
+            "statLabel": "de précision"
           },
           "p5": {
             "title": "Data Scientist",
@@ -496,7 +499,7 @@
         "intro": "my name is",
         "photoAlt": "Photo of Nikola Vucic",
         "photoCaption": "Paris, 2026",
-        "pillRole": "Data Scientist",
+        "pillRole": "Data Enthusiast",
         "pillPlace": "Paris, France",
         "pillInternship": "Apprenticeship 2027 → 2028",
         "noteInternship": "data apprenticeship 2027-2028 — available!",
@@ -579,21 +582,24 @@
             "text": "Deep learning model that automatically detects engine failures.",
             "items": [
               "Dataset construction and preprocessing",
+              "Analysis and comparison of several tested models",
               "Design, training and evaluation of a convolutional neural network (CNN)"
-            ]
+            ],
+            "statValue": "0.96",
+            "statLabel": "precision"
           },
           "p4": {
             "title": "ML Engineer",
             "roles": "Python · SciPy · Predictive models",
             "text": "Models that anticipate defective parts before they show up in quality indicators.",
             "items": [
+              "Analysis and comparison of several tested models",
               "Statistical reliability modelling (Weibull) per failure mode",
               "Failure-rate projection on recent production",
-              "Systematic backtesting of predictions",
-              "Automatically generated PowerPoint reports"
+              "Systematic backtesting: 10/10 on the main failure modes"
             ],
-            "statValue": "10 / 10",
-            "statLabel": "in backtest"
+            "statValue": "0.96",
+            "statLabel": "precision"
           },
           "p5": {
             "title": "Data Scientist",
